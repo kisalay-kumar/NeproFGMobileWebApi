@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd0" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_InsertHistoryHeaderData_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertTransferOrderLinesRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertTransferOrderLinesRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertTransferOrderLinesRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertTransferOrderLinesResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertTransferOrderLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_InsertTransferOrderLines_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreateTransferJournalHeader_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertTransferHeaderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertTransferHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertTransferHeaderRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertTransferHeaderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertTransferHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_InsertTransferHeader_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertHistoryDetailDataRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertHistoryDetailDataRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertHistoryDetailDataRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertHistoryDetailDataResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertHistoryDetailDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_InsertHistoryDetailData_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostPickingJournalRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePostPickingJournalRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostPickingJournalRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostPickingJournalResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePostPickingJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_PostPickingJournal_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostQCRejectRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePostQCRejectRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostQCRejectRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostQCRejectResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePostQCRejectResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_PostQCReject_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceQCRejectFGLineRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceQCRejectFGLineRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceQCRejectFGLineRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceQCRejectFGLineResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceQCRejectFGLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_QCRejectFGLine_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceQCRejectHeaderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceQCRejectHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceQCRejectHeaderRequest_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q17:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceQCRejectHeaderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceQCRejectHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_QCRejectHeader_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q18:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostRouteJournalRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePostRouteJournalRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostRouteJournalRequest_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostRouteJournalResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePostRouteJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_PostRouteJournal_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q20:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePrintStickerRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePrintStickerRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePrintStickerRequest_Headers">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q21:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePrintStickerResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePrintStickerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_PrintSticker_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q22:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceProcessRejectionRAFRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceProcessRejectionRAFRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceProcessRejectionRAFRequest_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q23:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceProcessRejectionRAFResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceProcessRejectionRAFResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_ProcessRejectionRAF_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q24:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertPickingDataRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertPickingDataRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertPickingDataRequest_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceInsertPickingDataResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceInsertPickingDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_InsertPickingData_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q26:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceQCRejectLinesRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceQCRejectLinesRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceQCRejectLinesRequest_Headers">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q27:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceQCRejectLinesResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceQCRejectLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_QCRejectLines_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q28:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostTransferJournalRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePostTransferJournalRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostTransferJournalRequest_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q29:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServicePostTransferJournalResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServicePostTransferJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_PostTransferJournal_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q30:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceShipTransferOrderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceShipTransferOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceShipTransferOrderRequest_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceShipTransferOrderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceShipTransferOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_shipTransferOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q32:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceRegisterTransferOrderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceRegisterTransferOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceRegisterTransferOrderRequest_Headers">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q33:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceRegisterTransferOrderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceRegisterTransferOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_RegisterTransferOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q34:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceUpdateStillageQtyRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceUpdateStillageQtyRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceUpdateStillageQtyRequest_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q35:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceUpdateStillageQtyResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceUpdateStillageQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_UpdateStillageQty_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q36:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceUpdateTransferStatusRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceUpdateTransferStatusRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceUpdateTransferStatusRequest_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceUpdateTransferStatusResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceUpdateTransferStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_UpdateTransferStatus_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q38:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceTransferOrderPickingListRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceTransferOrderPickingListRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceTransferOrderPickingListRequest_Headers">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q39:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceTransferOrderPickingListResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceTransferOrderPickingListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_TransferOrderPickingList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q40:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceReportAsFinishedRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceReportAsFinishedRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceReportAsFinishedRequest_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q41:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceReportAsFinishedResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceReportAsFinishedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_ReportAsFinished_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q42:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceStartWorkOrderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceStartWorkOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceStartWorkOrderRequest_Headers">
+    <wsdl:part xmlns:q43="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q43:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceStartWorkOrderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceStartWorkOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_StartWorkOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q44="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q44:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceUpdateQtyRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceUpdateQtyRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceUpdateQtyRequest_Headers">
+    <wsdl:part xmlns:q45="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q45:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceUpdateQtyResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceUpdateQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_UpdateQty_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q46="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q46:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceRecieveTransferOrderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceRecieveTransferOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceRecieveTransferOrderRequest_Headers">
+    <wsdl:part xmlns:q47="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q47:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceRecieveTransferOrderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceRecieveTransferOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_RecieveTransferOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q48:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceEndWorkOrderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceEndWorkOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceEndWorkOrderRequest_Headers">
+    <wsdl:part xmlns:q49="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q49:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceEndWorkOrderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceEndWorkOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_EndWorkOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q50="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q50:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateRAFRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateRAFRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateRAFRequest_Headers">
+    <wsdl:part xmlns:q51="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q51:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateRAFResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateRAFResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreateRAF_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q52="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q52:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCompletePickingListRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCompletePickingListRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCompletePickingListRequest_Headers">
+    <wsdl:part xmlns:q53="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q53:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCompletePickingListResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCompletePickingListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CompletePickingList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q54:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest_Headers">
+    <wsdl:part xmlns:q55="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q55:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreatePickingJournalDetailsFG_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q56="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q56:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingListRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePickingListRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingListRequest_Headers">
+    <wsdl:part xmlns:q57="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q57:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingListResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePickingListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreatePickingList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q58="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q58:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest_Headers">
+    <wsdl:part xmlns:q59="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q59:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateRouteJournalDetailsResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateRouteJournalDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreateRouteJournalDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q60="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q60:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateStickerRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateStickerRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateStickerRequest_Headers">
+    <wsdl:part xmlns:q61="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q61:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateStickerResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateStickerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreateSticker_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q62="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q62:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest_Headers">
+    <wsdl:part xmlns:q63="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q63:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreatePickingJournalDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q64="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q64:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingJournalHeaderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePickingJournalHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingJournalHeaderRequest_Headers">
+    <wsdl:part xmlns:q65="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q65:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePickingJournalHeaderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePickingJournalHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreatePickingJournalHeader_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q66="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q66:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateMovementRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateMovementRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateMovementRequest_Headers">
+    <wsdl:part xmlns:q67="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q67:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateMovementResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateMovementResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreateMovement_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q68="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q68:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceDeletePickingDataRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceDeletePickingDataRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceDeletePickingDataRequest_Headers">
+    <wsdl:part xmlns:q69="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q69:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceDeletePickingDataResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceDeletePickingDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_DeletePickingData_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q70="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q70:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest_Headers">
+    <wsdl:part xmlns:q71="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q71:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreateRouteJournalHeader_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q72="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q72:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateStickerDetailsRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateStickerDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateStickerDetailsRequest_Headers">
+    <wsdl:part xmlns:q73="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q73:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateStickerDetailsResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateStickerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreateStickerDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q74="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q74:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePackingSlipRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePackingSlipRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePackingSlipRequest_Headers">
+    <wsdl:part xmlns:q75="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q75:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreatePackingSlipResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreatePackingSlipResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreatePackingSlip_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q76="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q76:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateTransferJournalLinesRequest">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateTransferJournalLinesRequest" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateTransferJournalLinesRequest_Headers">
+    <wsdl:part xmlns:q77="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q77:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodServiceCreateTransferJournalLinesResponse">
+    <wsdl:part name="parameters" element="tns:Iace_FinishedGoodServiceCreateTransferJournalLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iace_FinishedGoodService_CreateTransferJournalLines_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q78="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q78:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="Iace_FinishedGoodService">
+    <wsdl:operation name="InsertHistoryHeaderData">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderData" name="Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest" message="tns:Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderDataResponse" name="Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse" message="tns:Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderDataAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_InsertHistoryHeaderData_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransferOrderLines">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLines" name="Iace_FinishedGoodServiceInsertTransferOrderLinesRequest" message="tns:Iace_FinishedGoodServiceInsertTransferOrderLinesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLinesResponse" name="Iace_FinishedGoodServiceInsertTransferOrderLinesResponse" message="tns:Iace_FinishedGoodServiceInsertTransferOrderLinesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLinesAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_InsertTransferOrderLines_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTransferJournalHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeader" name="Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest" message="tns:Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeaderResponse" name="Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse" message="tns:Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeaderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreateTransferJournalHeader_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransferHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeader" name="Iace_FinishedGoodServiceInsertTransferHeaderRequest" message="tns:Iace_FinishedGoodServiceInsertTransferHeaderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeaderResponse" name="Iace_FinishedGoodServiceInsertTransferHeaderResponse" message="tns:Iace_FinishedGoodServiceInsertTransferHeaderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeaderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_InsertTransferHeader_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertHistoryDetailData">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailData" name="Iace_FinishedGoodServiceInsertHistoryDetailDataRequest" message="tns:Iace_FinishedGoodServiceInsertHistoryDetailDataRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailDataResponse" name="Iace_FinishedGoodServiceInsertHistoryDetailDataResponse" message="tns:Iace_FinishedGoodServiceInsertHistoryDetailDataResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailDataAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_InsertHistoryDetailData_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostPickingJournal">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournal" name="Iace_FinishedGoodServicePostPickingJournalRequest" message="tns:Iace_FinishedGoodServicePostPickingJournalRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournalResponse" name="Iace_FinishedGoodServicePostPickingJournalResponse" message="tns:Iace_FinishedGoodServicePostPickingJournalResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournalAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_PostPickingJournal_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostQCReject">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostQCReject" name="Iace_FinishedGoodServicePostQCRejectRequest" message="tns:Iace_FinishedGoodServicePostQCRejectRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostQCRejectResponse" name="Iace_FinishedGoodServicePostQCRejectResponse" message="tns:Iace_FinishedGoodServicePostQCRejectResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostQCRejectAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_PostQCReject_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QCRejectFGLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLine" name="Iace_FinishedGoodServiceQCRejectFGLineRequest" message="tns:Iace_FinishedGoodServiceQCRejectFGLineRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLineResponse" name="Iace_FinishedGoodServiceQCRejectFGLineResponse" message="tns:Iace_FinishedGoodServiceQCRejectFGLineResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLineAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_QCRejectFGLine_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QCRejectHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeader" name="Iace_FinishedGoodServiceQCRejectHeaderRequest" message="tns:Iace_FinishedGoodServiceQCRejectHeaderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeaderResponse" name="Iace_FinishedGoodServiceQCRejectHeaderResponse" message="tns:Iace_FinishedGoodServiceQCRejectHeaderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeaderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_QCRejectHeader_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostRouteJournal">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournal" name="Iace_FinishedGoodServicePostRouteJournalRequest" message="tns:Iace_FinishedGoodServicePostRouteJournalRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournalResponse" name="Iace_FinishedGoodServicePostRouteJournalResponse" message="tns:Iace_FinishedGoodServicePostRouteJournalResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournalAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_PostRouteJournal_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintSticker">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PrintSticker" name="Iace_FinishedGoodServicePrintStickerRequest" message="tns:Iace_FinishedGoodServicePrintStickerRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PrintStickerResponse" name="Iace_FinishedGoodServicePrintStickerResponse" message="tns:Iace_FinishedGoodServicePrintStickerResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PrintStickerAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_PrintSticker_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessRejectionRAF">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAF" name="Iace_FinishedGoodServiceProcessRejectionRAFRequest" message="tns:Iace_FinishedGoodServiceProcessRejectionRAFRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAFResponse" name="Iace_FinishedGoodServiceProcessRejectionRAFResponse" message="tns:Iace_FinishedGoodServiceProcessRejectionRAFResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAFAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_ProcessRejectionRAF_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPickingData">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertPickingData" name="Iace_FinishedGoodServiceInsertPickingDataRequest" message="tns:Iace_FinishedGoodServiceInsertPickingDataRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertPickingDataResponse" name="Iace_FinishedGoodServiceInsertPickingDataResponse" message="tns:Iace_FinishedGoodServiceInsertPickingDataResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/InsertPickingDataAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_InsertPickingData_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QCRejectLines">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectLines" name="Iace_FinishedGoodServiceQCRejectLinesRequest" message="tns:Iace_FinishedGoodServiceQCRejectLinesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectLinesResponse" name="Iace_FinishedGoodServiceQCRejectLinesResponse" message="tns:Iace_FinishedGoodServiceQCRejectLinesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectLinesAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_QCRejectLines_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostTransferJournal">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournal" name="Iace_FinishedGoodServicePostTransferJournalRequest" message="tns:Iace_FinishedGoodServicePostTransferJournalRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournalResponse" name="Iace_FinishedGoodServicePostTransferJournalResponse" message="tns:Iace_FinishedGoodServicePostTransferJournalResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournalAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_PostTransferJournal_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="shipTransferOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrder" name="Iace_FinishedGoodServiceShipTransferOrderRequest" message="tns:Iace_FinishedGoodServiceShipTransferOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrderResponse" name="Iace_FinishedGoodServiceShipTransferOrderResponse" message="tns:Iace_FinishedGoodServiceShipTransferOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_shipTransferOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTransferOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrder" name="Iace_FinishedGoodServiceRegisterTransferOrderRequest" message="tns:Iace_FinishedGoodServiceRegisterTransferOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrderResponse" name="Iace_FinishedGoodServiceRegisterTransferOrderResponse" message="tns:Iace_FinishedGoodServiceRegisterTransferOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_RegisterTransferOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStillageQty">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQty" name="Iace_FinishedGoodServiceUpdateStillageQtyRequest" message="tns:Iace_FinishedGoodServiceUpdateStillageQtyRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQtyResponse" name="Iace_FinishedGoodServiceUpdateStillageQtyResponse" message="tns:Iace_FinishedGoodServiceUpdateStillageQtyResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQtyAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_UpdateStillageQty_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransferStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatus" name="Iace_FinishedGoodServiceUpdateTransferStatusRequest" message="tns:Iace_FinishedGoodServiceUpdateTransferStatusRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatusResponse" name="Iace_FinishedGoodServiceUpdateTransferStatusResponse" message="tns:Iace_FinishedGoodServiceUpdateTransferStatusResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatusAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_UpdateTransferStatus_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferOrderPickingList">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingList" name="Iace_FinishedGoodServiceTransferOrderPickingListRequest" message="tns:Iace_FinishedGoodServiceTransferOrderPickingListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingListResponse" name="Iace_FinishedGoodServiceTransferOrderPickingListResponse" message="tns:Iace_FinishedGoodServiceTransferOrderPickingListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingListAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_TransferOrderPickingList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportAsFinished">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinished" name="Iace_FinishedGoodServiceReportAsFinishedRequest" message="tns:Iace_FinishedGoodServiceReportAsFinishedRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinishedResponse" name="Iace_FinishedGoodServiceReportAsFinishedResponse" message="tns:Iace_FinishedGoodServiceReportAsFinishedResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinishedAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_ReportAsFinished_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartWorkOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrder" name="Iace_FinishedGoodServiceStartWorkOrderRequest" message="tns:Iace_FinishedGoodServiceStartWorkOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrderResponse" name="Iace_FinishedGoodServiceStartWorkOrderResponse" message="tns:Iace_FinishedGoodServiceStartWorkOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_StartWorkOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateQty">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/UpdateQty" name="Iace_FinishedGoodServiceUpdateQtyRequest" message="tns:Iace_FinishedGoodServiceUpdateQtyRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/UpdateQtyResponse" name="Iace_FinishedGoodServiceUpdateQtyResponse" message="tns:Iace_FinishedGoodServiceUpdateQtyResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/UpdateQtyAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_UpdateQty_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecieveTransferOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrder" name="Iace_FinishedGoodServiceRecieveTransferOrderRequest" message="tns:Iace_FinishedGoodServiceRecieveTransferOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrderResponse" name="Iace_FinishedGoodServiceRecieveTransferOrderResponse" message="tns:Iace_FinishedGoodServiceRecieveTransferOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_RecieveTransferOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EndWorkOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrder" name="Iace_FinishedGoodServiceEndWorkOrderRequest" message="tns:Iace_FinishedGoodServiceEndWorkOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrderResponse" name="Iace_FinishedGoodServiceEndWorkOrderResponse" message="tns:Iace_FinishedGoodServiceEndWorkOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_EndWorkOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRAF">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateRAF" name="Iace_FinishedGoodServiceCreateRAFRequest" message="tns:Iace_FinishedGoodServiceCreateRAFRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateRAFResponse" name="Iace_FinishedGoodServiceCreateRAFResponse" message="tns:Iace_FinishedGoodServiceCreateRAFResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateRAFAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreateRAF_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CompletePickingList">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CompletePickingList" name="Iace_FinishedGoodServiceCompletePickingListRequest" message="tns:Iace_FinishedGoodServiceCompletePickingListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CompletePickingListResponse" name="Iace_FinishedGoodServiceCompletePickingListResponse" message="tns:Iace_FinishedGoodServiceCompletePickingListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CompletePickingListAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CompletePickingList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePickingJournalDetailsFG">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFG" name="Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest" message="tns:Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFGResponse" name="Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse" message="tns:Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFGAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreatePickingJournalDetailsFG_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePickingList">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingList" name="Iace_FinishedGoodServiceCreatePickingListRequest" message="tns:Iace_FinishedGoodServiceCreatePickingListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingListResponse" name="Iace_FinishedGoodServiceCreatePickingListResponse" message="tns:Iace_FinishedGoodServiceCreatePickingListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingListAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreatePickingList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRouteJournalDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalDetails" name="Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest" message="tns:Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalDetailsResponse" name="Iace_FinishedGoodServiceCreateRouteJournalDetailsResponse" message="tns:Iace_FinishedGoodServiceCreateRouteJournalDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalDetailsAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreateRouteJournalDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSticker">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateSticker" name="Iace_FinishedGoodServiceCreateStickerRequest" message="tns:Iace_FinishedGoodServiceCreateStickerRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerResponse" name="Iace_FinishedGoodServiceCreateStickerResponse" message="tns:Iace_FinishedGoodServiceCreateStickerResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreateSticker_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePickingJournalDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetails" name="Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest" message="tns:Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsResponse" name="Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse" message="tns:Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreatePickingJournalDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePickingJournalHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalHeader" name="Iace_FinishedGoodServiceCreatePickingJournalHeaderRequest" message="tns:Iace_FinishedGoodServiceCreatePickingJournalHeaderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalHeaderResponse" name="Iace_FinishedGoodServiceCreatePickingJournalHeaderResponse" message="tns:Iace_FinishedGoodServiceCreatePickingJournalHeaderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalHeaderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreatePickingJournalHeader_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateMovement">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateMovement" name="Iace_FinishedGoodServiceCreateMovementRequest" message="tns:Iace_FinishedGoodServiceCreateMovementRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateMovementResponse" name="Iace_FinishedGoodServiceCreateMovementResponse" message="tns:Iace_FinishedGoodServiceCreateMovementResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateMovementAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreateMovement_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePickingData">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/DeletePickingData" name="Iace_FinishedGoodServiceDeletePickingDataRequest" message="tns:Iace_FinishedGoodServiceDeletePickingDataRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/DeletePickingDataResponse" name="Iace_FinishedGoodServiceDeletePickingDataResponse" message="tns:Iace_FinishedGoodServiceDeletePickingDataResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/DeletePickingDataAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_DeletePickingData_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRouteJournalHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeader" name="Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest" message="tns:Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeaderResponse" name="Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse" message="tns:Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeaderAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreateRouteJournalHeader_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateStickerDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerDetails" name="Iace_FinishedGoodServiceCreateStickerDetailsRequest" message="tns:Iace_FinishedGoodServiceCreateStickerDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerDetailsResponse" name="Iace_FinishedGoodServiceCreateStickerDetailsResponse" message="tns:Iace_FinishedGoodServiceCreateStickerDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerDetailsAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreateStickerDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePackingSlip">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlip" name="Iace_FinishedGoodServiceCreatePackingSlipRequest" message="tns:Iace_FinishedGoodServiceCreatePackingSlipRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlipResponse" name="Iace_FinishedGoodServiceCreatePackingSlipResponse" message="tns:Iace_FinishedGoodServiceCreatePackingSlipResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlipAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreatePackingSlip_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTransferJournalLines">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalLines" name="Iace_FinishedGoodServiceCreateTransferJournalLinesRequest" message="tns:Iace_FinishedGoodServiceCreateTransferJournalLinesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalLinesResponse" name="Iace_FinishedGoodServiceCreateTransferJournalLinesResponse" message="tns:Iace_FinishedGoodServiceCreateTransferJournalLinesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalLinesAifFaultFault" name="AifFaultFault" message="tns:Iace_FinishedGoodService_CreateTransferJournalLines_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
