@@ -15,6 +15,7 @@ namespace NeproWebApi.Controllers
 {
     public class RejectStillageController : ApiController
     {
+
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Conn"].ConnectionString);
         string query = ""; SqlCommand dbcommand;
         [Route("api/Nepro/RejectedStillageDetails")]
