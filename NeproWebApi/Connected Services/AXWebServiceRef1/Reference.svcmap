@@ -19,17 +19,17 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://10.10.10.218:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Iace_FinishedGoodServiceGroup.xsd" MetadataType="Schema" ID="af51d49b-acec-48de-8062-9a6523875592" SourceId="1" SourceUrl="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd5" />
-    <MetadataFile FileName="Iace_FinishedGoodServiceGroup.wsdl" MetadataType="Wsdl" ID="de29cf58-0ccc-4758-b9a5-48a497a71515" SourceId="1" SourceUrl="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup" />
-    <MetadataFile FileName="Iace_FinishedGoodServiceGroup1.wsdl" MetadataType="Wsdl" ID="c0d2676a-9c54-4e2a-b3ba-d14026ae6965" SourceId="1" SourceUrl="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?wsdl=wsdl0" />
-    <MetadataFile FileName="Iace_FinishedGoodServiceGroup1.xsd" MetadataType="Schema" ID="efaae823-6ac1-48a0-b396-4f59405a4bad" SourceId="1" SourceUrl="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd2" />
-    <MetadataFile FileName="Iace_FinishedGoodServiceGroup2.xsd" MetadataType="Schema" ID="c120b044-4dd7-48e4-a617-57a7a474b8a9" SourceId="1" SourceUrl="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd3" />
-    <MetadataFile FileName="Iace_FinishedGoodServiceGroup3.xsd" MetadataType="Schema" ID="300003a6-b853-4979-8f90-202a7b5e19d7" SourceId="1" SourceUrl="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd0" />
-    <MetadataFile FileName="Iace_FinishedGoodServiceGroup4.xsd" MetadataType="Schema" ID="6fd72072-b2f8-416f-8bac-54ac4f443e36" SourceId="1" SourceUrl="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd1" />
-    <MetadataFile FileName="Iace_FinishedGoodServiceGroup5.xsd" MetadataType="Schema" ID="07f4db02-c35c-4433-ad97-26b129949933" SourceId="1" SourceUrl="http://amy-pc:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="Iace_FinishedGoodServiceGroup6.xsd" MetadataType="Schema" ID="fc7bd83a-e1dc-4f2f-8b85-dada7cab0bc7" SourceId="1" SourceUrl="http://10.10.10.218:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="Iace_FinishedGoodServiceGroup61.xsd" MetadataType="Schema" ID="328fd283-bbde-4a56-917d-90825b6cab52" SourceId="1" SourceUrl="http://10.10.10.218:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="Iace_FinishedGoodServiceGroup62.xsd" MetadataType="Schema" ID="3b4c13b2-68f0-4a1f-a6e2-496c9b690691" SourceId="1" SourceUrl="http://10.10.10.218:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="Iace_FinishedGoodServiceGroup63.xsd" MetadataType="Schema" ID="7518a74b-40d6-4179-a4e7-8bc628a3b0bd" SourceId="1" SourceUrl="http://10.10.10.218:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd3" />
+    <MetadataFile FileName="Iace_FinishedGoodServiceGroup2.wsdl" MetadataType="Wsdl" ID="2bcfeac3-f2a9-467d-a932-66a625669eb4" SourceId="1" SourceUrl="http://10.10.10.218:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="Iace_FinishedGoodServiceGroup64.xsd" MetadataType="Schema" ID="c6be19a5-c228-40ae-a610-25a848373099" SourceId="1" SourceUrl="http://10.10.10.218:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd2" />
+    <MetadataFile FileName="Iace_FinishedGoodServiceGroup65.xsd" MetadataType="Schema" ID="a54464e0-6b71-446d-a0ef-879a528f9479" SourceId="1" SourceUrl="http://10.10.10.218:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="Iace_FinishedGoodServiceGroup21.wsdl" MetadataType="Wsdl" ID="626a1da7-59c9-41c2-9a93-6ce71a9b7b99" SourceId="1" SourceUrl="http://10.10.10.218:8101/DynamicsAx/Services/Iace_FinishedGoodServiceGroup" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

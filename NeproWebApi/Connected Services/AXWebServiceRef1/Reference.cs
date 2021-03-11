@@ -576,208 +576,22 @@ namespace NeproWebApi.AXWebServiceRef1 {
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://tempuri.org", ConfigurationName="AXWebServiceRef1.Iace_FinishedGoodService")]
     public interface Iace_FinishedGoodService {
         
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest) of message Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest does not match the default value (InsertHistoryHeaderData)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderDataResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderDataAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse InsertHistoryHeaderData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderDataResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse> InsertHistoryHeaderDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertTransferOrderLinesRequest) of message Iace_FinishedGoodServiceInsertTransferOrderLinesRequest does not match the default value (InsertTransferOrderLines)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLinesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLinesAifFaultFault" +
-            "", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse InsertTransferOrderLines(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLinesResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse> InsertTransferOrderLinesAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest) of message Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest does not match the default value (CreateTransferJournalHeader)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeaderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeaderAifFaultFa" +
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest) of message Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest does not match the default value (CreatePickingJournalDetails)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetails", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsAifFaultFa" +
             "ult", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse CreateTransferJournalHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest request);
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse CreatePickingJournalDetails(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeaderResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse> CreateTransferJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetails", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse> CreatePickingJournalDetailsAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest request);
         
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertTransferHeaderRequest) of message Iace_FinishedGoodServiceInsertTransferHeaderRequest does not match the default value (InsertTransferHeader)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeaderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeaderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse InsertTransferHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest request);
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreatePackingSlipRequest) of message Iace_FinishedGoodServiceCreatePackingSlipRequest does not match the default value (CreatePackingSlip)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlip", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlipResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlipAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse CreatePackingSlip(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeaderResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse> InsertTransferHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertHistoryDetailDataRequest) of message Iace_FinishedGoodServiceInsertHistoryDetailDataRequest does not match the default value (InsertHistoryDetailData)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailDataResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailDataAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse InsertHistoryDetailData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailDataResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse> InsertHistoryDetailDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePostPickingJournalRequest) of message Iace_FinishedGoodServicePostPickingJournalRequest does not match the default value (PostPickingJournal)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournalResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournalAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse PostPickingJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournalResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse> PostPickingJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePostQCRejectRequest) of message Iace_FinishedGoodServicePostQCRejectRequest does not match the default value (PostQCReject)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostQCReject", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostQCRejectResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PostQCRejectAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse PostQCReject(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostQCReject", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostQCRejectResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse> PostQCRejectAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceQCRejectFGLineRequest) of message Iace_FinishedGoodServiceQCRejectFGLineRequest does not match the default value (QCRejectFGLine)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLine", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLineResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLineAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse QCRejectFGLine(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLine", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLineResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse> QCRejectFGLineAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceQCRejectHeaderRequest) of message Iace_FinishedGoodServiceQCRejectHeaderRequest does not match the default value (QCRejectHeader)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeaderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeaderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse QCRejectHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeaderResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse> QCRejectHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePostRouteJournalRequest) of message Iace_FinishedGoodServicePostRouteJournalRequest does not match the default value (PostRouteJournal)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournalResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournalAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse PostRouteJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournalResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse> PostRouteJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePrintStickerRequest) of message Iace_FinishedGoodServicePrintStickerRequest does not match the default value (PrintSticker)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PrintSticker", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PrintStickerResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PrintStickerAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse PrintSticker(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PrintSticker", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PrintStickerResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse> PrintStickerAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceProcessRejectionRAFRequest) of message Iace_FinishedGoodServiceProcessRejectionRAFRequest does not match the default value (ProcessRejectionRAF)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAF", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAFResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAFAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse ProcessRejectionRAF(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAF", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAFResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse> ProcessRejectionRAFAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertPickingDataRequest) of message Iace_FinishedGoodServiceInsertPickingDataRequest does not match the default value (InsertPickingData)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertPickingData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertPickingDataResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertPickingDataAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse InsertPickingData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertPickingData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertPickingDataResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse> InsertPickingDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceQCRejectLinesRequest) of message Iace_FinishedGoodServiceQCRejectLinesRequest does not match the default value (QCRejectLines)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectLinesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectLinesAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse QCRejectLines(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectLinesResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse> QCRejectLinesAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePostTransferJournalRequest) of message Iace_FinishedGoodServicePostTransferJournalRequest does not match the default value (PostTransferJournal)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournalResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournalAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse PostTransferJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournalResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse> PostTransferJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceShipTransferOrderRequest) of message Iace_FinishedGoodServiceShipTransferOrderRequest does not match the default value (shipTransferOrder)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse shipTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrderResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse> shipTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceRegisterTransferOrderRequest) of message Iace_FinishedGoodServiceRegisterTransferOrderRequest does not match the default value (RegisterTransferOrder)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse RegisterTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrderResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse> RegisterTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceUpdateStillageQtyRequest) of message Iace_FinishedGoodServiceUpdateStillageQtyRequest does not match the default value (UpdateStillageQty)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQty", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQtyResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQtyAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse UpdateStillageQty(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQty", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQtyResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse> UpdateStillageQtyAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceUpdateTransferStatusRequest) of message Iace_FinishedGoodServiceUpdateTransferStatusRequest does not match the default value (UpdateTransferStatus)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatus", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatusResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatusAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse UpdateTransferStatus(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatus", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatusResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse> UpdateTransferStatusAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceTransferOrderPickingListRequest) of message Iace_FinishedGoodServiceTransferOrderPickingListRequest does not match the default value (TransferOrderPickingList)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingListResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingListAifFaultFault" +
-            "", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse TransferOrderPickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingListResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse> TransferOrderPickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceReportAsFinishedRequest) of message Iace_FinishedGoodServiceReportAsFinishedRequest does not match the default value (ReportAsFinished)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinished", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinishedResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinishedAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse ReportAsFinished(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinished", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinishedResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse> ReportAsFinishedAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceStartWorkOrderRequest) of message Iace_FinishedGoodServiceStartWorkOrderRequest does not match the default value (StartWorkOrder)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse StartWorkOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrderResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse> StartWorkOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceUpdateQtyRequest) of message Iace_FinishedGoodServiceUpdateQtyRequest does not match the default value (UpdateQty)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateQty", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateQtyResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/UpdateQtyAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse UpdateQty(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateQty", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateQtyResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse> UpdateQtyAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceRecieveTransferOrderRequest) of message Iace_FinishedGoodServiceRecieveTransferOrderRequest does not match the default value (RecieveTransferOrder)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse RecieveTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrderResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse> RecieveTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceEndWorkOrderRequest) of message Iace_FinishedGoodServiceEndWorkOrderRequest does not match the default value (EndWorkOrder)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse EndWorkOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrderResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse> EndWorkOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlip", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlipResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse> CreatePackingSlipAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest request);
         
         // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateRAFRequest) of message Iace_FinishedGoodServiceCreateRAFRequest does not match the default value (CreateRAF)
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateRAF", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateRAFResponse")]
@@ -786,33 +600,6 @@ namespace NeproWebApi.AXWebServiceRef1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateRAF", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateRAFResponse")]
         System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRAFResponse> CreateRAFAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRAFRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCompletePickingListRequest) of message Iace_FinishedGoodServiceCompletePickingListRequest does not match the default value (CompletePickingList)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CompletePickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CompletePickingListResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CompletePickingListAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse CompletePickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CompletePickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CompletePickingListResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse> CompletePickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest) of message Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest does not match the default value (CreatePickingJournalDetailsFG)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFG", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFGResponse" +
-            "")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFGAifFault" +
-            "Fault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse CreatePickingJournalDetailsFG(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFG", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFGResponse" +
-            "")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse> CreatePickingJournalDetailsFGAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest request);
-        
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreatePickingListRequest) of message Iace_FinishedGoodServiceCreatePickingListRequest does not match the default value (CreatePickingList)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingListResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingListAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse CreatePickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingListResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse> CreatePickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest request);
         
         // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest) of message Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest does not match the default value (CreateRouteJournalDetails)
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalDetails", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalDetailsResponse")]
@@ -823,22 +610,22 @@ namespace NeproWebApi.AXWebServiceRef1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalDetails", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalDetailsResponse")]
         System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalDetailsResponse> CreateRouteJournalDetailsAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest request);
         
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateStickerRequest) of message Iace_FinishedGoodServiceCreateStickerRequest does not match the default value (CreateSticker)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateSticker", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateStickerResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse CreateSticker(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest request);
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest) of message Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest does not match the default value (CreateRouteJournalHeader)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeaderResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeaderAifFaultFault" +
+            "", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse CreateRouteJournalHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateSticker", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateStickerResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse> CreateStickerAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeaderResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse> CreateRouteJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest request);
         
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest) of message Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest does not match the default value (CreatePickingJournalDetails)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetails", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsAifFaultFa" +
-            "ult", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse CreatePickingJournalDetails(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest request);
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCompletePickingListRequest) of message Iace_FinishedGoodServiceCompletePickingListRequest does not match the default value (CompletePickingList)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CompletePickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CompletePickingListResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CompletePickingListAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse CompletePickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetails", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse> CreatePickingJournalDetailsAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CompletePickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CompletePickingListResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse> CompletePickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest request);
         
         // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreatePickingJournalHeaderRequest) of message Iace_FinishedGoodServiceCreatePickingJournalHeaderRequest does not match the default value (CreatePickingJournalHeader)
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalHeaderResponse")]
@@ -857,22 +644,32 @@ namespace NeproWebApi.AXWebServiceRef1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateMovement", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateMovementResponse")]
         System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateMovementResponse> CreateMovementAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateMovementRequest request);
         
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceDeletePickingDataRequest) of message Iace_FinishedGoodServiceDeletePickingDataRequest does not match the default value (DeletePickingData)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/DeletePickingData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/DeletePickingDataResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/DeletePickingDataAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse DeletePickingData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest request);
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest) of message Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest does not match the default value (CreatePickingJournalDetailsFG)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFG", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFGResponse" +
+            "")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFGAifFault" +
+            "Fault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse CreatePickingJournalDetailsFG(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/DeletePickingData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/DeletePickingDataResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse> DeletePickingDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFG", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingJournalDetailsFGResponse" +
+            "")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse> CreatePickingJournalDetailsFGAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest request);
         
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest) of message Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest does not match the default value (CreateRouteJournalHeader)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeaderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeaderAifFaultFault" +
-            "", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse CreateRouteJournalHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest request);
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceProcessRejectionRAFRequest) of message Iace_FinishedGoodServiceProcessRejectionRAFRequest does not match the default value (ProcessRejectionRAF)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAF", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAFResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAFAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse ProcessRejectionRAF(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateRouteJournalHeaderResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse> CreateRouteJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAF", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/ProcessRejectionRAFResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse> ProcessRejectionRAFAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceQCRejectLinesRequest) of message Iace_FinishedGoodServiceQCRejectLinesRequest does not match the default value (QCRejectLines)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectLinesResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectLinesAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse QCRejectLines(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectLinesResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse> QCRejectLinesAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest request);
         
         // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateStickerDetailsRequest) of message Iace_FinishedGoodServiceCreateStickerDetailsRequest does not match the default value (CreateStickerDetails)
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerDetails", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateStickerDetailsResponse")]
@@ -882,13 +679,169 @@ namespace NeproWebApi.AXWebServiceRef1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerDetails", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateStickerDetailsResponse")]
         System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerDetailsResponse> CreateStickerDetailsAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerDetailsRequest request);
         
-        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreatePackingSlipRequest) of message Iace_FinishedGoodServiceCreatePackingSlipRequest does not match the default value (CreatePackingSlip)
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlip", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlipResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlipAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse CreatePackingSlip(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest request);
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest) of message Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest does not match the default value (InsertHistoryHeaderData)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderDataResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderDataAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse InsertHistoryHeaderData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlip", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePackingSlipResponse")]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse> CreatePackingSlipAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryHeaderDataResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse> InsertHistoryHeaderDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertPickingDataRequest) of message Iace_FinishedGoodServiceInsertPickingDataRequest does not match the default value (InsertPickingData)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertPickingData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertPickingDataResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertPickingDataAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse InsertPickingData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertPickingData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertPickingDataResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse> InsertPickingDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceRegisterTransferOrderRequest) of message Iace_FinishedGoodServiceRegisterTransferOrderRequest does not match the default value (RegisterTransferOrder)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrderResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse RegisterTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RegisterTransferOrderResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse> RegisterTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePrintStickerRequest) of message Iace_FinishedGoodServicePrintStickerRequest does not match the default value (PrintSticker)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PrintSticker", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PrintStickerResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PrintStickerAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse PrintSticker(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PrintSticker", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PrintStickerResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse> PrintStickerAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertHistoryDetailDataRequest) of message Iace_FinishedGoodServiceInsertHistoryDetailDataRequest does not match the default value (InsertHistoryDetailData)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailDataResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailDataAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse InsertHistoryDetailData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertHistoryDetailDataResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse> InsertHistoryDetailDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceUpdateStillageQtyRequest) of message Iace_FinishedGoodServiceUpdateStillageQtyRequest does not match the default value (UpdateStillageQty)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQty", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQtyResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQtyAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse UpdateStillageQty(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQty", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateStillageQtyResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse> UpdateStillageQtyAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest) of message Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest does not match the default value (CreateTransferJournalHeader)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeaderResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeaderAifFaultFa" +
+            "ult", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse CreateTransferJournalHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalHeaderResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse> CreateTransferJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest) of message Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest does not match the default value (RejectionJournalDetailsNew)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsNew", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsNewResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsNewAifFaultFau" +
+            "lt", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse RejectionJournalDetailsNew(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsNew", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsNewResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse> RejectionJournalDetailsNewAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateStickerRequest) of message Iace_FinishedGoodServiceCreateStickerRequest does not match the default value (CreateSticker)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateSticker", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateStickerResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse CreateSticker(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateSticker", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateStickerResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse> CreateStickerAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePostQCRejectRequest) of message Iace_FinishedGoodServicePostQCRejectRequest does not match the default value (PostQCReject)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostQCReject", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostQCRejectResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PostQCRejectAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse PostQCReject(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostQCReject", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostQCRejectResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse> PostQCRejectAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceDeletePickingDataRequest) of message Iace_FinishedGoodServiceDeletePickingDataRequest does not match the default value (DeletePickingData)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/DeletePickingData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/DeletePickingDataResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/DeletePickingDataAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse DeletePickingData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/DeletePickingData", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/DeletePickingDataResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse> DeletePickingDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceReportAsFinishedRequest) of message Iace_FinishedGoodServiceReportAsFinishedRequest does not match the default value (ReportAsFinished)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinished", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinishedResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinishedAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse ReportAsFinished(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinished", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/ReportAsFinishedResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse> ReportAsFinishedAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertTransferOrderLinesRequest) of message Iace_FinishedGoodServiceInsertTransferOrderLinesRequest does not match the default value (InsertTransferOrderLines)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLinesResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLinesAifFaultFault" +
+            "", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse InsertTransferOrderLines(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertTransferOrderLinesResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse> InsertTransferOrderLinesAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceShipTransferOrderRequest) of message Iace_FinishedGoodServiceShipTransferOrderRequest does not match the default value (shipTransferOrder)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrderResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse shipTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/shipTransferOrderResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse> shipTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceRecieveTransferOrderRequest) of message Iace_FinishedGoodServiceRecieveTransferOrderRequest does not match the default value (RecieveTransferOrder)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrderResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse RecieveTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RecieveTransferOrderResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse> RecieveTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceUpdateTransferStatusRequest) of message Iace_FinishedGoodServiceUpdateTransferStatusRequest does not match the default value (UpdateTransferStatus)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatus", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatusResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatusAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse UpdateTransferStatus(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatus", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateTransferStatusResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse> UpdateTransferStatusAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceRejectionHeaderNewRequest) of message Iace_FinishedGoodServiceRejectionHeaderNewRequest does not match the default value (RejectionHeaderNew)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RejectionHeaderNew", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RejectionHeaderNewResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/RejectionHeaderNewAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewResponse RejectionHeaderNew(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RejectionHeaderNew", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RejectionHeaderNewResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewResponse> RejectionHeaderNewAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePostPickingJournalRequest) of message Iace_FinishedGoodServicePostPickingJournalRequest does not match the default value (PostPickingJournal)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournalResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournalAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse PostPickingJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostPickingJournalResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse> PostPickingJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest) of message Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest does not match the default value (RejectionJournalDetailsFGNew)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsFGNew", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsFGNewResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsFGNewAifFaultF" +
+            "ault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse RejectionJournalDetailsFGNew(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsFGNew", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/RejectionJournalDetailsFGNewResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse> RejectionJournalDetailsFGNewAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePostRouteJournalRequest) of message Iace_FinishedGoodServicePostRouteJournalRequest does not match the default value (PostRouteJournal)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournalResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournalAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse PostRouteJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostRouteJournalResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse> PostRouteJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest request);
         
         // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateTransferJournalLinesRequest) of message Iace_FinishedGoodServiceCreateTransferJournalLinesRequest does not match the default value (CreateTransferJournalLines)
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalLinesResponse")]
@@ -898,770 +851,139 @@ namespace NeproWebApi.AXWebServiceRef1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalLines", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateTransferJournalLinesResponse")]
         System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalLinesResponse> CreateTransferJournalLinesAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalLinesRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceTransferOrderPickingListRequest) of message Iace_FinishedGoodServiceTransferOrderPickingListRequest does not match the default value (TransferOrderPickingList)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingListResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingListAifFaultFault" +
+            "", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse TransferOrderPickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/TransferOrderPickingListResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse> TransferOrderPickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreatePickingListRequest) of message Iace_FinishedGoodServiceCreatePickingListRequest does not match the default value (CreatePickingList)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingListResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingListAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse CreatePickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreatePickingList", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreatePickingListResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse> CreatePickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceInsertTransferHeaderRequest) of message Iace_FinishedGoodServiceInsertTransferHeaderRequest does not match the default value (InsertTransferHeader)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeaderResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeaderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse InsertTransferHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/InsertTransferHeaderResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse> InsertTransferHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceQCRejectHeaderRequest) of message Iace_FinishedGoodServiceQCRejectHeaderRequest does not match the default value (QCRejectHeader)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeaderResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeaderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse QCRejectHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeader", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectHeaderResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse> QCRejectHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceStartWorkOrderRequest) of message Iace_FinishedGoodServiceStartWorkOrderRequest does not match the default value (StartWorkOrder)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrderResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse StartWorkOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/StartWorkOrderResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse> StartWorkOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceUpdateQtyRequest) of message Iace_FinishedGoodServiceUpdateQtyRequest does not match the default value (UpdateQty)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateQty", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateQtyResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/UpdateQtyAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse UpdateQty(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/UpdateQty", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/UpdateQtyResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse> UpdateQtyAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceCreateStickerKGRequest) of message Iace_FinishedGoodServiceCreateStickerKGRequest does not match the default value (CreateStickerKG)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerKG", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateStickerKGResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerKGAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGResponse CreateStickerKG(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/CreateStickerKG", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/CreateStickerKGResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGResponse> CreateStickerKGAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceQCRejectFGLineRequest) of message Iace_FinishedGoodServiceQCRejectFGLineRequest does not match the default value (QCRejectFGLine)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLine", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLineResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLineAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse QCRejectFGLine(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLine", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/QCRejectFGLineResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse> QCRejectFGLineAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServiceEndWorkOrderRequest) of message Iace_FinishedGoodServiceEndWorkOrderRequest does not match the default value (EndWorkOrder)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrderResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrderAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse EndWorkOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrder", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/EndWorkOrderResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse> EndWorkOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (Iace_FinishedGoodServicePostTransferJournalRequest) of message Iace_FinishedGoodServicePostTransferJournalRequest does not match the default value (PostTransferJournal)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournalResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NeproWebApi.AXWebServiceRef1.AifFault), Action="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournalAifFaultFault", Name="AifFault", Namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault")]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse PostTransferJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournal", ReplyAction="http://tempuri.org/Iace_FinishedGoodService/PostTransferJournalResponse")]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse> PostTransferJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
         public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _StillageID;
+        public string _journalid;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _siteid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public string _workorderid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
         public string _ItemId;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
-        public decimal _WorkOrderQty;
-        
-        public Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageID, string _siteid, string _workorderid, string _ItemId, decimal _WorkOrderQty) {
-            this.CallContext = CallContext;
-            this._StillageID = _StillageID;
-            this._siteid = _siteid;
-            this._workorderid = _workorderid;
-            this._ItemId = _ItemId;
-            this._WorkOrderQty = _WorkOrderQty;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertTransferOrderLinesRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertTransferOrderLinesRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _TransferId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _StillageId;
-        
-        public Iace_FinishedGoodServiceInsertTransferOrderLinesRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertTransferOrderLinesRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
-            this.CallContext = CallContext;
-            this._TransferId = _TransferId;
-            this._StillageId = _StillageId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertTransferOrderLinesResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertTransferOrderLinesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceInsertTransferOrderLinesResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertTransferOrderLinesResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _RequestId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _WebUser;
-        
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public string _stiker;
-        
-        public Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RequestId, string _WebUser, string _stiker) {
-            this.CallContext = CallContext;
-            this._RequestId = _RequestId;
-            this._WebUser = _WebUser;
-            this._stiker = _stiker;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertTransferHeaderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertTransferHeaderRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _StillageId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _ToLocation;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public string _WebUser;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
-        public string _RequestedId;
-        
-        public Iace_FinishedGoodServiceInsertTransferHeaderRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertTransferHeaderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageId, string _ToLocation, string _WebUser, string _RequestedId) {
-            this.CallContext = CallContext;
-            this._StillageId = _StillageId;
-            this._ToLocation = _ToLocation;
-            this._WebUser = _WebUser;
-            this._RequestedId = _RequestedId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertTransferHeaderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertTransferHeaderResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceInsertTransferHeaderResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertTransferHeaderResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertHistoryDetailDataRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertHistoryDetailDataRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _StillageID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _PlanningId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public string _Activity;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
-        public string _ActivityDesc;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
-        public string _StillageLocation;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
-        public string _ActualFLT;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
-        public string _AssignFLT;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=7)]
-        public string _ActualLocation;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=8)]
-        public string _AssignLocation;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=9)]
-        public string _Reason;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=10)]
-        public string _ReasonDescription;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=11)]
-        public string _ISRaf;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=12)]
-        public decimal _MergeQty;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=13)]
-        public string _MergeFrom;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=14)]
-        public decimal _ReserverdQty;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=15)]
-        public decimal _CountedQty;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=16)]
-        public decimal _StillageQty;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=17)]
-        public string _UserName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=18)]
-        public string _StillageStatus;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=19)]
-        public decimal _RejectedQty;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=20)]
-        public string _MergeTo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=21)]
-        public string _fromlocation;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=22)]
-        public string _tolocation;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=23)]
-        public string _warehouse;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=24)]
-        public decimal _QtyAdjusted;
-        
-        public Iace_FinishedGoodServiceInsertHistoryDetailDataRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertHistoryDetailDataRequest(
-                    NeproWebApi.AXWebServiceRef1.CallContext CallContext, 
-                    string _StillageID, 
-                    string _PlanningId, 
-                    string _Activity, 
-                    string _ActivityDesc, 
-                    string _StillageLocation, 
-                    string _ActualFLT, 
-                    string _AssignFLT, 
-                    string _ActualLocation, 
-                    string _AssignLocation, 
-                    string _Reason, 
-                    string _ReasonDescription, 
-                    string _ISRaf, 
-                    decimal _MergeQty, 
-                    string _MergeFrom, 
-                    decimal _ReserverdQty, 
-                    decimal _CountedQty, 
-                    decimal _StillageQty, 
-                    string _UserName, 
-                    string _StillageStatus, 
-                    decimal _RejectedQty, 
-                    string _MergeTo, 
-                    string _fromlocation, 
-                    string _tolocation, 
-                    string _warehouse, 
-                    decimal _QtyAdjusted) {
-            this.CallContext = CallContext;
-            this._StillageID = _StillageID;
-            this._PlanningId = _PlanningId;
-            this._Activity = _Activity;
-            this._ActivityDesc = _ActivityDesc;
-            this._StillageLocation = _StillageLocation;
-            this._ActualFLT = _ActualFLT;
-            this._AssignFLT = _AssignFLT;
-            this._ActualLocation = _ActualLocation;
-            this._AssignLocation = _AssignLocation;
-            this._Reason = _Reason;
-            this._ReasonDescription = _ReasonDescription;
-            this._ISRaf = _ISRaf;
-            this._MergeQty = _MergeQty;
-            this._MergeFrom = _MergeFrom;
-            this._ReserverdQty = _ReserverdQty;
-            this._CountedQty = _CountedQty;
-            this._StillageQty = _StillageQty;
-            this._UserName = _UserName;
-            this._StillageStatus = _StillageStatus;
-            this._RejectedQty = _RejectedQty;
-            this._MergeTo = _MergeTo;
-            this._fromlocation = _fromlocation;
-            this._tolocation = _tolocation;
-            this._warehouse = _warehouse;
-            this._QtyAdjusted = _QtyAdjusted;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertHistoryDetailDataResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertHistoryDetailDataResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceInsertHistoryDetailDataResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertHistoryDetailDataResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostPickingJournalRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePostPickingJournalRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _JournalId;
-        
-        public Iace_FinishedGoodServicePostPickingJournalRequest() {
-        }
-        
-        public Iace_FinishedGoodServicePostPickingJournalRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
-            this.CallContext = CallContext;
-            this._JournalId = _JournalId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostPickingJournalResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePostPickingJournalResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServicePostPickingJournalResponse() {
-        }
-        
-        public Iace_FinishedGoodServicePostPickingJournalResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostQCRejectRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePostQCRejectRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _ProdJournalId;
-        
-        public Iace_FinishedGoodServicePostQCRejectRequest() {
-        }
-        
-        public Iace_FinishedGoodServicePostQCRejectRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdJournalId) {
-            this.CallContext = CallContext;
-            this._ProdJournalId = _ProdJournalId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostQCRejectResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePostQCRejectResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServicePostQCRejectResponse() {
-        }
-        
-        public Iace_FinishedGoodServicePostQCRejectResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectFGLineRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceQCRejectFGLineRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _journalid;
-        
-        public Iace_FinishedGoodServiceQCRejectFGLineRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceQCRejectFGLineRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
-            this.CallContext = CallContext;
-            this._journalid = _journalid;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectFGLineResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceQCRejectFGLineResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceQCRejectFGLineResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceQCRejectFGLineResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectHeaderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceQCRejectHeaderRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _workorderid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _StillageID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public string _RejectionType;
-        
-        public Iace_FinishedGoodServiceQCRejectHeaderRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceQCRejectHeaderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string _StillageID, string _RejectionType) {
-            this.CallContext = CallContext;
-            this._workorderid = _workorderid;
-            this._StillageID = _StillageID;
-            this._RejectionType = _RejectionType;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectHeaderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceQCRejectHeaderResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceQCRejectHeaderResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceQCRejectHeaderResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostRouteJournalRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePostRouteJournalRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _JournalId;
-        
-        public Iace_FinishedGoodServicePostRouteJournalRequest() {
-        }
-        
-        public Iace_FinishedGoodServicePostRouteJournalRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
-            this.CallContext = CallContext;
-            this._JournalId = _JournalId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostRouteJournalResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePostRouteJournalResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServicePostRouteJournalResponse() {
-        }
-        
-        public Iace_FinishedGoodServicePostRouteJournalResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePrintStickerRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePrintStickerRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _Stillageid;
-        
-        public Iace_FinishedGoodServicePrintStickerRequest() {
-        }
-        
-        public Iace_FinishedGoodServicePrintStickerRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillageid) {
-            this.CallContext = CallContext;
-            this._Stillageid = _Stillageid;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePrintStickerResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePrintStickerResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServicePrintStickerResponse() {
-        }
-        
-        public Iace_FinishedGoodServicePrintStickerResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceProcessRejectionRAFRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceProcessRejectionRAFRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _prodid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public bool _Picking;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public bool _Route;
+        public decimal _Qty;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
         public string _Shift;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
-        public string _Sticker;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
-        public string _createdFrom;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
-        public bool _EndmarkRoute;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=7)]
-        public bool _EndMarkPickingList;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=8)]
-        public decimal _Qty;
-        
-        public Iace_FinishedGoodServiceProcessRejectionRAFRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceProcessRejectionRAFRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, decimal _Qty) {
-            this.CallContext = CallContext;
-            this._prodid = _prodid;
-            this._Picking = _Picking;
-            this._Route = _Route;
-            this._Shift = _Shift;
-            this._Sticker = _Sticker;
-            this._createdFrom = _createdFrom;
-            this._EndmarkRoute = _EndmarkRoute;
-            this._EndMarkPickingList = _EndMarkPickingList;
-            this._Qty = _Qty;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceProcessRejectionRAFResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceProcessRejectionRAFResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceProcessRejectionRAFResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceProcessRejectionRAFResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertPickingDataRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertPickingDataRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _salesid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _itemid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public decimal _qty;
-        
-        public Iace_FinishedGoodServiceInsertPickingDataRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertPickingDataRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _salesid, string _itemid, decimal _qty) {
-            this.CallContext = CallContext;
-            this._salesid = _salesid;
-            this._itemid = _itemid;
-            this._qty = _qty;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertPickingDataResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceInsertPickingDataResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceInsertPickingDataResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceInsertPickingDataResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectLinesRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceQCRejectLinesRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _journalid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _RejectionType;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public decimal _Qty;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
-        public string _Reason;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
-        public string _Shift;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
         public System.DateTime _Date;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
-        public decimal _ActualQty;
-        
-        public Iace_FinishedGoodServiceQCRejectLinesRequest() {
+        public Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest() {
         }
         
-        public Iace_FinishedGoodServiceQCRejectLinesRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _RejectionType, decimal _Qty, string _Reason, string _Shift, System.DateTime _Date, decimal _ActualQty) {
+        public Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _ItemId, decimal _Qty, string _Shift, System.DateTime _Date) {
             this.CallContext = CallContext;
             this._journalid = _journalid;
-            this._RejectionType = _RejectionType;
+            this._ItemId = _ItemId;
             this._Qty = _Qty;
-            this._Reason = _Reason;
             this._Shift = _Shift;
             this._Date = _Date;
-            this._ActualQty = _ActualQty;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectLinesResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceQCRejectLinesResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
         public string response;
         
-        public Iace_FinishedGoodServiceQCRejectLinesResponse() {
+        public Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse() {
         }
         
-        public Iace_FinishedGoodServiceQCRejectLinesResponse(string response) {
+        public Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse(string response) {
             this.response = response;
         }
     }
@@ -1669,509 +991,69 @@ namespace NeproWebApi.AXWebServiceRef1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostTransferJournalRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePostTransferJournalRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePackingSlipRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreatePackingSlipRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
         public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _JournalId;
-        
-        public Iace_FinishedGoodServicePostTransferJournalRequest() {
-        }
-        
-        public Iace_FinishedGoodServicePostTransferJournalRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
-            this.CallContext = CallContext;
-            this._JournalId = _JournalId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostTransferJournalResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServicePostTransferJournalResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServicePostTransferJournalResponse() {
-        }
-        
-        public Iace_FinishedGoodServicePostTransferJournalResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceShipTransferOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceShipTransferOrderRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _TransferId;
-        
-        public Iace_FinishedGoodServiceShipTransferOrderRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceShipTransferOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
-            this.CallContext = CallContext;
-            this._TransferId = _TransferId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceShipTransferOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceShipTransferOrderResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceShipTransferOrderResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceShipTransferOrderResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRegisterTransferOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceRegisterTransferOrderRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _TransferId;
+        public string _Routeid;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _StillageId;
-        
-        public Iace_FinishedGoodServiceRegisterTransferOrderRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceRegisterTransferOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
-            this.CallContext = CallContext;
-            this._TransferId = _TransferId;
-            this._StillageId = _StillageId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRegisterTransferOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceRegisterTransferOrderResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceRegisterTransferOrderResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceRegisterTransferOrderResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateStillageQtyRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceUpdateStillageQtyRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _Stillage;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _Location;
+        public string _LoadingPlanNo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public decimal _Qty;
-        
-        public Iace_FinishedGoodServiceUpdateStillageQtyRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceUpdateStillageQtyRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _Location, decimal _Qty) {
-            this.CallContext = CallContext;
-            this._Stillage = _Stillage;
-            this._Location = _Location;
-            this._Qty = _Qty;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateStillageQtyResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceUpdateStillageQtyResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceUpdateStillageQtyResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceUpdateStillageQtyResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateTransferStatusRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceUpdateTransferStatusRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _Stillage;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _InventTransferId;
-        
-        public Iace_FinishedGoodServiceUpdateTransferStatusRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceUpdateTransferStatusRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _InventTransferId) {
-            this.CallContext = CallContext;
-            this._Stillage = _Stillage;
-            this._InventTransferId = _InventTransferId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateTransferStatusResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceUpdateTransferStatusResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceUpdateTransferStatusResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceUpdateTransferStatusResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceTransferOrderPickingListRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceTransferOrderPickingListRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _TransferId;
-        
-        public Iace_FinishedGoodServiceTransferOrderPickingListRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceTransferOrderPickingListRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
-            this.CallContext = CallContext;
-            this._TransferId = _TransferId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceTransferOrderPickingListResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceTransferOrderPickingListResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceTransferOrderPickingListResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceTransferOrderPickingListResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceReportAsFinishedRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceReportAsFinishedRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _prodid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public bool _Picking;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public bool _Route;
+        public string DriverId;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
-        public string _Shift;
+        public string DriverTypeId;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
-        public string _Sticker;
+        public string DriverMobile;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
-        public string _createdFrom;
+        public string DriverAddress;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
-        public bool _EndmarkRoute;
+        public string DriverName;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=7)]
-        public bool _EndMarkPickingList;
+        public string TruckNo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=8)]
-        public bool _endjob;
+        public string strSalesTable;
         
-        public Iace_FinishedGoodServiceReportAsFinishedRequest() {
+        public Iace_FinishedGoodServiceCreatePackingSlipRequest() {
         }
         
-        public Iace_FinishedGoodServiceReportAsFinishedRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, bool _endjob) {
+        public Iace_FinishedGoodServiceCreatePackingSlipRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Routeid, string _LoadingPlanNo, string DriverId, string DriverTypeId, string DriverMobile, string DriverAddress, string DriverName, string TruckNo, string strSalesTable) {
             this.CallContext = CallContext;
-            this._prodid = _prodid;
-            this._Picking = _Picking;
-            this._Route = _Route;
-            this._Shift = _Shift;
-            this._Sticker = _Sticker;
-            this._createdFrom = _createdFrom;
-            this._EndmarkRoute = _EndmarkRoute;
-            this._EndMarkPickingList = _EndMarkPickingList;
-            this._endjob = _endjob;
+            this._Routeid = _Routeid;
+            this._LoadingPlanNo = _LoadingPlanNo;
+            this.DriverId = DriverId;
+            this.DriverTypeId = DriverTypeId;
+            this.DriverMobile = DriverMobile;
+            this.DriverAddress = DriverAddress;
+            this.DriverName = DriverName;
+            this.TruckNo = TruckNo;
+            this.strSalesTable = strSalesTable;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceReportAsFinishedResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceReportAsFinishedResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePackingSlipResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreatePackingSlipResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
         public string response;
         
-        public Iace_FinishedGoodServiceReportAsFinishedResponse() {
+        public Iace_FinishedGoodServiceCreatePackingSlipResponse() {
         }
         
-        public Iace_FinishedGoodServiceReportAsFinishedResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceStartWorkOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceStartWorkOrderRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _ProdId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public bool _Picking;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public bool _Route;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
-        public decimal _Qty;
-        
-        public Iace_FinishedGoodServiceStartWorkOrderRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceStartWorkOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId, bool _Picking, bool _Route, decimal _Qty) {
-            this.CallContext = CallContext;
-            this._ProdId = _ProdId;
-            this._Picking = _Picking;
-            this._Route = _Route;
-            this._Qty = _Qty;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceStartWorkOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceStartWorkOrderResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceStartWorkOrderResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceStartWorkOrderResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateQtyRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceUpdateQtyRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _prodid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public bool _Picking;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public bool _Route;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
-        public string _Shift;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
-        public string _Sticker;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
-        public string _createdFrom;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
-        public decimal _qty;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=7)]
-        public decimal _variance;
-        
-        public Iace_FinishedGoodServiceUpdateQtyRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceUpdateQtyRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, decimal _qty, decimal _variance) {
-            this.CallContext = CallContext;
-            this._prodid = _prodid;
-            this._Picking = _Picking;
-            this._Route = _Route;
-            this._Shift = _Shift;
-            this._Sticker = _Sticker;
-            this._createdFrom = _createdFrom;
-            this._qty = _qty;
-            this._variance = _variance;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateQtyResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceUpdateQtyResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceUpdateQtyResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceUpdateQtyResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRecieveTransferOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceRecieveTransferOrderRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _TransferId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _StillageId;
-        
-        public Iace_FinishedGoodServiceRecieveTransferOrderRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceRecieveTransferOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
-            this.CallContext = CallContext;
-            this._TransferId = _TransferId;
-            this._StillageId = _StillageId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRecieveTransferOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceRecieveTransferOrderResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceRecieveTransferOrderResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceRecieveTransferOrderResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceEndWorkOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceEndWorkOrderRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _ProdId;
-        
-        public Iace_FinishedGoodServiceEndWorkOrderRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceEndWorkOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId) {
-            this.CallContext = CallContext;
-            this._ProdId = _ProdId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceEndWorkOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceEndWorkOrderResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceEndWorkOrderResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceEndWorkOrderResponse(string response) {
+        public Iace_FinishedGoodServiceCreatePackingSlipResponse(string response) {
             this.response = response;
         }
     }
@@ -2241,120 +1123,6 @@ namespace NeproWebApi.AXWebServiceRef1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCompletePickingListRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCompletePickingListRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _RouteID;
-        
-        public Iace_FinishedGoodServiceCompletePickingListRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceCompletePickingListRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RouteID) {
-            this.CallContext = CallContext;
-            this._RouteID = _RouteID;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCompletePickingListResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCompletePickingListResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceCompletePickingListResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceCompletePickingListResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _journalid;
-        
-        public Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
-            this.CallContext = CallContext;
-            this._journalid = _journalid;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingListRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreatePickingListRequest {
-        
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
-        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string strSalesTable;
-        
-        public Iace_FinishedGoodServiceCreatePickingListRequest() {
-        }
-        
-        public Iace_FinishedGoodServiceCreatePickingListRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string strSalesTable) {
-            this.CallContext = CallContext;
-            this.strSalesTable = strSalesTable;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingListResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreatePickingListResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string response;
-        
-        public Iace_FinishedGoodServiceCreatePickingListResponse() {
-        }
-        
-        public Iace_FinishedGoodServiceCreatePickingListResponse(string response) {
-            this.response = response;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
     public partial class Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest {
         
@@ -2413,45 +1181,41 @@ namespace NeproWebApi.AXWebServiceRef1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateStickerRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreateStickerRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
         public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _zoneid;
+        public string _workorderid;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _workorderId;
+        public string _createdFrom;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public decimal _qty;
-        
-        public Iace_FinishedGoodServiceCreateStickerRequest() {
+        public Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest() {
         }
         
-        public Iace_FinishedGoodServiceCreateStickerRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _zoneid, string _workorderId, decimal _qty) {
+        public Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string _createdFrom) {
             this.CallContext = CallContext;
-            this._zoneid = _zoneid;
-            this._workorderId = _workorderId;
-            this._qty = _qty;
+            this._workorderid = _workorderid;
+            this._createdFrom = _createdFrom;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateStickerResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreateStickerResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
         public string response;
         
-        public Iace_FinishedGoodServiceCreateStickerResponse() {
+        public Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse() {
         }
         
-        public Iace_FinishedGoodServiceCreateStickerResponse(string response) {
+        public Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse(string response) {
             this.response = response;
         }
     }
@@ -2459,53 +1223,37 @@ namespace NeproWebApi.AXWebServiceRef1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCompletePickingListRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCompletePickingListRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
         public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _journalid;
+        public string _RouteID;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _ItemId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public decimal _Qty;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
-        public string _Shift;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
-        public System.DateTime _Date;
-        
-        public Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest() {
+        public Iace_FinishedGoodServiceCompletePickingListRequest() {
         }
         
-        public Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _ItemId, decimal _Qty, string _Shift, System.DateTime _Date) {
+        public Iace_FinishedGoodServiceCompletePickingListRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RouteID) {
             this.CallContext = CallContext;
-            this._journalid = _journalid;
-            this._ItemId = _ItemId;
-            this._Qty = _Qty;
-            this._Shift = _Shift;
-            this._Date = _Date;
+            this._RouteID = _RouteID;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCompletePickingListResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCompletePickingListResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
         public string response;
         
-        public Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse() {
+        public Iace_FinishedGoodServiceCompletePickingListResponse() {
         }
         
-        public Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse(string response) {
+        public Iace_FinishedGoodServiceCompletePickingListResponse(string response) {
             this.response = response;
         }
     }
@@ -2605,33 +1353,37 @@ namespace NeproWebApi.AXWebServiceRef1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceDeletePickingDataRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceDeletePickingDataRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
         public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
         
-        public Iace_FinishedGoodServiceDeletePickingDataRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _journalid;
+        
+        public Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest() {
         }
         
-        public Iace_FinishedGoodServiceDeletePickingDataRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext) {
+        public Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
             this.CallContext = CallContext;
+            this._journalid = _journalid;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceDeletePickingDataResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceDeletePickingDataResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
         public string response;
         
-        public Iace_FinishedGoodServiceDeletePickingDataResponse() {
+        public Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse() {
         }
         
-        public Iace_FinishedGoodServiceDeletePickingDataResponse(string response) {
+        public Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse(string response) {
             this.response = response;
         }
     }
@@ -2639,37 +1391,131 @@ namespace NeproWebApi.AXWebServiceRef1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceProcessRejectionRAFRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceProcessRejectionRAFRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
         public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _workorderid;
+        public string _prodid;
         
-        public Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public bool _Picking;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public bool _Route;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
+        public string _Shift;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
+        public string _Sticker;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
+        public string _createdFrom;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
+        public bool _EndmarkRoute;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=7)]
+        public bool _EndMarkPickingList;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=8)]
+        public decimal _Qty;
+        
+        public Iace_FinishedGoodServiceProcessRejectionRAFRequest() {
         }
         
-        public Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid) {
+        public Iace_FinishedGoodServiceProcessRejectionRAFRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, decimal _Qty) {
             this.CallContext = CallContext;
-            this._workorderid = _workorderid;
+            this._prodid = _prodid;
+            this._Picking = _Picking;
+            this._Route = _Route;
+            this._Shift = _Shift;
+            this._Sticker = _Sticker;
+            this._createdFrom = _createdFrom;
+            this._EndmarkRoute = _EndmarkRoute;
+            this._EndMarkPickingList = _EndMarkPickingList;
+            this._Qty = _Qty;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceProcessRejectionRAFResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceProcessRejectionRAFResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
         public string response;
         
-        public Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse() {
+        public Iace_FinishedGoodServiceProcessRejectionRAFResponse() {
         }
         
-        public Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse(string response) {
+        public Iace_FinishedGoodServiceProcessRejectionRAFResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectLinesRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceQCRejectLinesRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _journalid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _RejectionType;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public decimal _Qty;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
+        public string _Reason;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
+        public string _Shift;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
+        public System.DateTime _Date;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
+        public decimal _ActualQty;
+        
+        public Iace_FinishedGoodServiceQCRejectLinesRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceQCRejectLinesRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _RejectionType, decimal _Qty, string _Reason, string _Shift, System.DateTime _Date, decimal _ActualQty) {
+            this.CallContext = CallContext;
+            this._journalid = _journalid;
+            this._RejectionType = _RejectionType;
+            this._Qty = _Qty;
+            this._Reason = _Reason;
+            this._Shift = _Shift;
+            this._Date = _Date;
+            this._ActualQty = _ActualQty;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectLinesResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceQCRejectLinesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceQCRejectLinesResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceQCRejectLinesResponse(string response) {
             this.response = response;
         }
     }
@@ -2719,69 +1565,1000 @@ namespace NeproWebApi.AXWebServiceRef1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePackingSlipRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreatePackingSlipRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
         public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
-        public string _Routeid;
+        public string _StillageID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
-        public string _LoadingPlanNo;
+        public string _siteid;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
-        public string DriverId;
+        public string _workorderid;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
-        public string DriverTypeId;
+        public string _ItemId;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
-        public string DriverMobile;
+        public decimal _WorkOrderQty;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
-        public string DriverAddress;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
-        public string DriverName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=7)]
-        public string TruckNo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=8)]
-        public string strSalesTable;
-        
-        public Iace_FinishedGoodServiceCreatePackingSlipRequest() {
+        public Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest() {
         }
         
-        public Iace_FinishedGoodServiceCreatePackingSlipRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Routeid, string _LoadingPlanNo, string DriverId, string DriverTypeId, string DriverMobile, string DriverAddress, string DriverName, string TruckNo, string strSalesTable) {
+        public Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageID, string _siteid, string _workorderid, string _ItemId, decimal _WorkOrderQty) {
             this.CallContext = CallContext;
-            this._Routeid = _Routeid;
-            this._LoadingPlanNo = _LoadingPlanNo;
-            this.DriverId = DriverId;
-            this.DriverTypeId = DriverTypeId;
-            this.DriverMobile = DriverMobile;
-            this.DriverAddress = DriverAddress;
-            this.DriverName = DriverName;
-            this.TruckNo = TruckNo;
-            this.strSalesTable = strSalesTable;
+            this._StillageID = _StillageID;
+            this._siteid = _siteid;
+            this._workorderid = _workorderid;
+            this._ItemId = _ItemId;
+            this._WorkOrderQty = _WorkOrderQty;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePackingSlipResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
-    public partial class Iace_FinishedGoodServiceCreatePackingSlipResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
         public string response;
         
-        public Iace_FinishedGoodServiceCreatePackingSlipResponse() {
+        public Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse() {
         }
         
-        public Iace_FinishedGoodServiceCreatePackingSlipResponse(string response) {
+        public Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertPickingDataRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertPickingDataRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _salesid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _itemid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public decimal _qty;
+        
+        public Iace_FinishedGoodServiceInsertPickingDataRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceInsertPickingDataRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _salesid, string _itemid, decimal _qty) {
+            this.CallContext = CallContext;
+            this._salesid = _salesid;
+            this._itemid = _itemid;
+            this._qty = _qty;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertPickingDataResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertPickingDataResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceInsertPickingDataResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceInsertPickingDataResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRegisterTransferOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRegisterTransferOrderRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _TransferId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _StillageId;
+        
+        public Iace_FinishedGoodServiceRegisterTransferOrderRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceRegisterTransferOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
+            this.CallContext = CallContext;
+            this._TransferId = _TransferId;
+            this._StillageId = _StillageId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRegisterTransferOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRegisterTransferOrderResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceRegisterTransferOrderResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceRegisterTransferOrderResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePrintStickerRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePrintStickerRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _Stillageid;
+        
+        public Iace_FinishedGoodServicePrintStickerRequest() {
+        }
+        
+        public Iace_FinishedGoodServicePrintStickerRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillageid) {
+            this.CallContext = CallContext;
+            this._Stillageid = _Stillageid;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePrintStickerResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePrintStickerResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServicePrintStickerResponse() {
+        }
+        
+        public Iace_FinishedGoodServicePrintStickerResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertHistoryDetailDataRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertHistoryDetailDataRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _StillageID;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _PlanningId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public string _Activity;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
+        public string _ActivityDesc;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
+        public string _StillageLocation;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
+        public string _ActualFLT;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
+        public string _AssignFLT;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=7)]
+        public string _ActualLocation;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=8)]
+        public string _AssignLocation;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=9)]
+        public string _Reason;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=10)]
+        public string _ReasonDescription;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=11)]
+        public string _ISRaf;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=12)]
+        public decimal _MergeQty;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=13)]
+        public string _MergeFrom;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=14)]
+        public decimal _ReserverdQty;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=15)]
+        public decimal _CountedQty;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=16)]
+        public decimal _StillageQty;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=17)]
+        public string _UserName;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=18)]
+        public string _StillageStatus;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=19)]
+        public decimal _RejectedQty;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=20)]
+        public string _MergeTo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=21)]
+        public string _fromlocation;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=22)]
+        public string _tolocation;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=23)]
+        public string _warehouse;
+        
+        public Iace_FinishedGoodServiceInsertHistoryDetailDataRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceInsertHistoryDetailDataRequest(
+                    NeproWebApi.AXWebServiceRef1.CallContext CallContext, 
+                    string _StillageID, 
+                    string _PlanningId, 
+                    string _Activity, 
+                    string _ActivityDesc, 
+                    string _StillageLocation, 
+                    string _ActualFLT, 
+                    string _AssignFLT, 
+                    string _ActualLocation, 
+                    string _AssignLocation, 
+                    string _Reason, 
+                    string _ReasonDescription, 
+                    string _ISRaf, 
+                    decimal _MergeQty, 
+                    string _MergeFrom, 
+                    decimal _ReserverdQty, 
+                    decimal _CountedQty, 
+                    decimal _StillageQty, 
+                    string _UserName, 
+                    string _StillageStatus, 
+                    decimal _RejectedQty, 
+                    string _MergeTo, 
+                    string _fromlocation, 
+                    string _tolocation, 
+                    string _warehouse) {
+            this.CallContext = CallContext;
+            this._StillageID = _StillageID;
+            this._PlanningId = _PlanningId;
+            this._Activity = _Activity;
+            this._ActivityDesc = _ActivityDesc;
+            this._StillageLocation = _StillageLocation;
+            this._ActualFLT = _ActualFLT;
+            this._AssignFLT = _AssignFLT;
+            this._ActualLocation = _ActualLocation;
+            this._AssignLocation = _AssignLocation;
+            this._Reason = _Reason;
+            this._ReasonDescription = _ReasonDescription;
+            this._ISRaf = _ISRaf;
+            this._MergeQty = _MergeQty;
+            this._MergeFrom = _MergeFrom;
+            this._ReserverdQty = _ReserverdQty;
+            this._CountedQty = _CountedQty;
+            this._StillageQty = _StillageQty;
+            this._UserName = _UserName;
+            this._StillageStatus = _StillageStatus;
+            this._RejectedQty = _RejectedQty;
+            this._MergeTo = _MergeTo;
+            this._fromlocation = _fromlocation;
+            this._tolocation = _tolocation;
+            this._warehouse = _warehouse;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertHistoryDetailDataResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertHistoryDetailDataResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceInsertHistoryDetailDataResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceInsertHistoryDetailDataResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateStillageQtyRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceUpdateStillageQtyRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _Stillage;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _Location;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public decimal _Qty;
+        
+        public Iace_FinishedGoodServiceUpdateStillageQtyRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceUpdateStillageQtyRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _Location, decimal _Qty) {
+            this.CallContext = CallContext;
+            this._Stillage = _Stillage;
+            this._Location = _Location;
+            this._Qty = _Qty;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateStillageQtyResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceUpdateStillageQtyResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceUpdateStillageQtyResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceUpdateStillageQtyResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _RequestId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _WebUser;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public string _stiker;
+        
+        public Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RequestId, string _WebUser, string _stiker) {
+            this.CallContext = CallContext;
+            this._RequestId = _RequestId;
+            this._WebUser = _WebUser;
+            this._stiker = _stiker;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _journalid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _ItemId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public decimal _Qty;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
+        public string _Shift;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
+        public System.DateTime _Date;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
+        public string _sticker;
+        
+        public Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _ItemId, decimal _Qty, string _Shift, System.DateTime _Date, string _sticker) {
+            this.CallContext = CallContext;
+            this._journalid = _journalid;
+            this._ItemId = _ItemId;
+            this._Qty = _Qty;
+            this._Shift = _Shift;
+            this._Date = _Date;
+            this._sticker = _sticker;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateStickerRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreateStickerRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _zoneid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _workorderId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public decimal _qty;
+        
+        public Iace_FinishedGoodServiceCreateStickerRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceCreateStickerRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _zoneid, string _workorderId, decimal _qty) {
+            this.CallContext = CallContext;
+            this._zoneid = _zoneid;
+            this._workorderId = _workorderId;
+            this._qty = _qty;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateStickerResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreateStickerResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceCreateStickerResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceCreateStickerResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostQCRejectRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePostQCRejectRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _ProdJournalId;
+        
+        public Iace_FinishedGoodServicePostQCRejectRequest() {
+        }
+        
+        public Iace_FinishedGoodServicePostQCRejectRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdJournalId) {
+            this.CallContext = CallContext;
+            this._ProdJournalId = _ProdJournalId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostQCRejectResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePostQCRejectResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServicePostQCRejectResponse() {
+        }
+        
+        public Iace_FinishedGoodServicePostQCRejectResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceDeletePickingDataRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceDeletePickingDataRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        public Iace_FinishedGoodServiceDeletePickingDataRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceDeletePickingDataRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext) {
+            this.CallContext = CallContext;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceDeletePickingDataResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceDeletePickingDataResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceDeletePickingDataResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceDeletePickingDataResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceReportAsFinishedRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceReportAsFinishedRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _prodid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public bool _Picking;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public bool _Route;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
+        public string _Shift;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
+        public string _Sticker;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
+        public string _createdFrom;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
+        public bool _EndmarkRoute;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=7)]
+        public bool _EndMarkPickingList;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=8)]
+        public bool _endjob;
+        
+        public Iace_FinishedGoodServiceReportAsFinishedRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceReportAsFinishedRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, bool _endjob) {
+            this.CallContext = CallContext;
+            this._prodid = _prodid;
+            this._Picking = _Picking;
+            this._Route = _Route;
+            this._Shift = _Shift;
+            this._Sticker = _Sticker;
+            this._createdFrom = _createdFrom;
+            this._EndmarkRoute = _EndmarkRoute;
+            this._EndMarkPickingList = _EndMarkPickingList;
+            this._endjob = _endjob;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceReportAsFinishedResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceReportAsFinishedResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceReportAsFinishedResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceReportAsFinishedResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertTransferOrderLinesRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertTransferOrderLinesRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _TransferId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _StillageId;
+        
+        public Iace_FinishedGoodServiceInsertTransferOrderLinesRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceInsertTransferOrderLinesRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
+            this.CallContext = CallContext;
+            this._TransferId = _TransferId;
+            this._StillageId = _StillageId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertTransferOrderLinesResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertTransferOrderLinesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceInsertTransferOrderLinesResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceInsertTransferOrderLinesResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceShipTransferOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceShipTransferOrderRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _TransferId;
+        
+        public Iace_FinishedGoodServiceShipTransferOrderRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceShipTransferOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
+            this.CallContext = CallContext;
+            this._TransferId = _TransferId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceShipTransferOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceShipTransferOrderResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceShipTransferOrderResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceShipTransferOrderResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRecieveTransferOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRecieveTransferOrderRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _TransferId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _StillageId;
+        
+        public Iace_FinishedGoodServiceRecieveTransferOrderRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceRecieveTransferOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
+            this.CallContext = CallContext;
+            this._TransferId = _TransferId;
+            this._StillageId = _StillageId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRecieveTransferOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRecieveTransferOrderResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceRecieveTransferOrderResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceRecieveTransferOrderResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateTransferStatusRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceUpdateTransferStatusRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _Stillage;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _InventTransferId;
+        
+        public Iace_FinishedGoodServiceUpdateTransferStatusRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceUpdateTransferStatusRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _InventTransferId) {
+            this.CallContext = CallContext;
+            this._Stillage = _Stillage;
+            this._InventTransferId = _InventTransferId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateTransferStatusResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceUpdateTransferStatusResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceUpdateTransferStatusResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceUpdateTransferStatusResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRejectionHeaderNewRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRejectionHeaderNewRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _workorderid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string Createdby;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public string _sticker;
+        
+        public Iace_FinishedGoodServiceRejectionHeaderNewRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceRejectionHeaderNewRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string Createdby, string _sticker) {
+            this.CallContext = CallContext;
+            this._workorderid = _workorderid;
+            this.Createdby = Createdby;
+            this._sticker = _sticker;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRejectionHeaderNewResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRejectionHeaderNewResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceRejectionHeaderNewResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceRejectionHeaderNewResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostPickingJournalRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePostPickingJournalRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _JournalId;
+        
+        public Iace_FinishedGoodServicePostPickingJournalRequest() {
+        }
+        
+        public Iace_FinishedGoodServicePostPickingJournalRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
+            this.CallContext = CallContext;
+            this._JournalId = _JournalId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostPickingJournalResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePostPickingJournalResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServicePostPickingJournalResponse() {
+        }
+        
+        public Iace_FinishedGoodServicePostPickingJournalResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _journalid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _Sticker;
+        
+        public Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _Sticker) {
+            this.CallContext = CallContext;
+            this._journalid = _journalid;
+            this._Sticker = _Sticker;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostRouteJournalRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePostRouteJournalRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _JournalId;
+        
+        public Iace_FinishedGoodServicePostRouteJournalRequest() {
+        }
+        
+        public Iace_FinishedGoodServicePostRouteJournalRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
+            this.CallContext = CallContext;
+            this._JournalId = _JournalId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostRouteJournalResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePostRouteJournalResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServicePostRouteJournalResponse() {
+        }
+        
+        public Iace_FinishedGoodServicePostRouteJournalResponse(string response) {
             this.response = response;
         }
     }
@@ -2856,6 +2633,466 @@ namespace NeproWebApi.AXWebServiceRef1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceTransferOrderPickingListRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceTransferOrderPickingListRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _TransferId;
+        
+        public Iace_FinishedGoodServiceTransferOrderPickingListRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceTransferOrderPickingListRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
+            this.CallContext = CallContext;
+            this._TransferId = _TransferId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceTransferOrderPickingListResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceTransferOrderPickingListResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceTransferOrderPickingListResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceTransferOrderPickingListResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingListRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreatePickingListRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string strSalesTable;
+        
+        public Iace_FinishedGoodServiceCreatePickingListRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceCreatePickingListRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string strSalesTable) {
+            this.CallContext = CallContext;
+            this.strSalesTable = strSalesTable;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreatePickingListResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreatePickingListResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceCreatePickingListResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceCreatePickingListResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertTransferHeaderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertTransferHeaderRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _StillageId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _ToLocation;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public string _WebUser;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
+        public string _RequestedId;
+        
+        public Iace_FinishedGoodServiceInsertTransferHeaderRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceInsertTransferHeaderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageId, string _ToLocation, string _WebUser, string _RequestedId) {
+            this.CallContext = CallContext;
+            this._StillageId = _StillageId;
+            this._ToLocation = _ToLocation;
+            this._WebUser = _WebUser;
+            this._RequestedId = _RequestedId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceInsertTransferHeaderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceInsertTransferHeaderResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceInsertTransferHeaderResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceInsertTransferHeaderResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectHeaderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceQCRejectHeaderRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _workorderid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _StillageID;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public string _RejectionType;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
+        public string Createdby;
+        
+        public Iace_FinishedGoodServiceQCRejectHeaderRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceQCRejectHeaderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string _StillageID, string _RejectionType, string Createdby) {
+            this.CallContext = CallContext;
+            this._workorderid = _workorderid;
+            this._StillageID = _StillageID;
+            this._RejectionType = _RejectionType;
+            this.Createdby = Createdby;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectHeaderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceQCRejectHeaderResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceQCRejectHeaderResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceQCRejectHeaderResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceStartWorkOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceStartWorkOrderRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _ProdId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public bool _Picking;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public bool _Route;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
+        public decimal _Qty;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
+        public string _StartedBy;
+        
+        public Iace_FinishedGoodServiceStartWorkOrderRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceStartWorkOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId, bool _Picking, bool _Route, decimal _Qty, string _StartedBy) {
+            this.CallContext = CallContext;
+            this._ProdId = _ProdId;
+            this._Picking = _Picking;
+            this._Route = _Route;
+            this._Qty = _Qty;
+            this._StartedBy = _StartedBy;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceStartWorkOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceStartWorkOrderResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceStartWorkOrderResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceStartWorkOrderResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateQtyRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceUpdateQtyRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _prodid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public bool _Picking;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public bool _Route;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=3)]
+        public string _Shift;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=4)]
+        public string _Sticker;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=5)]
+        public string _createdFrom;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=6)]
+        public decimal _qty;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=7)]
+        public decimal _variance;
+        
+        public Iace_FinishedGoodServiceUpdateQtyRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceUpdateQtyRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, decimal _qty, decimal _variance) {
+            this.CallContext = CallContext;
+            this._prodid = _prodid;
+            this._Picking = _Picking;
+            this._Route = _Route;
+            this._Shift = _Shift;
+            this._Sticker = _Sticker;
+            this._createdFrom = _createdFrom;
+            this._qty = _qty;
+            this._variance = _variance;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceUpdateQtyResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceUpdateQtyResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceUpdateQtyResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceUpdateQtyResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateStickerKGRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreateStickerKGRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _zoneid;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _workorderId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=2)]
+        public decimal _qty;
+        
+        public Iace_FinishedGoodServiceCreateStickerKGRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceCreateStickerKGRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _zoneid, string _workorderId, decimal _qty) {
+            this.CallContext = CallContext;
+            this._zoneid = _zoneid;
+            this._workorderId = _workorderId;
+            this._qty = _qty;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceCreateStickerKGResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceCreateStickerKGResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceCreateStickerKGResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceCreateStickerKGResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectFGLineRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceQCRejectFGLineRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _journalid;
+        
+        public Iace_FinishedGoodServiceQCRejectFGLineRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceQCRejectFGLineRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
+            this.CallContext = CallContext;
+            this._journalid = _journalid;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceQCRejectFGLineResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceQCRejectFGLineResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceQCRejectFGLineResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceQCRejectFGLineResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceEndWorkOrderRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceEndWorkOrderRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _ProdId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=1)]
+        public string _EndedBy;
+        
+        public Iace_FinishedGoodServiceEndWorkOrderRequest() {
+        }
+        
+        public Iace_FinishedGoodServiceEndWorkOrderRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId, string _EndedBy) {
+            this.CallContext = CallContext;
+            this._ProdId = _ProdId;
+            this._EndedBy = _EndedBy;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServiceEndWorkOrderResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServiceEndWorkOrderResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServiceEndWorkOrderResponse() {
+        }
+        
+        public Iace_FinishedGoodServiceEndWorkOrderResponse(string response) {
+            this.response = response;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostTransferJournalRequest", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePostTransferJournalRequest {
+        
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts")]
+        public NeproWebApi.AXWebServiceRef1.CallContext CallContext;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string _JournalId;
+        
+        public Iace_FinishedGoodServicePostTransferJournalRequest() {
+        }
+        
+        public Iace_FinishedGoodServicePostTransferJournalRequest(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
+            this.CallContext = CallContext;
+            this._JournalId = _JournalId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Iace_FinishedGoodServicePostTransferJournalResponse", WrapperNamespace="http://tempuri.org", IsWrapped=true)]
+    public partial class Iace_FinishedGoodServicePostTransferJournalResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org", Order=0)]
+        public string response;
+        
+        public Iace_FinishedGoodServicePostTransferJournalResponse() {
+        }
+        
+        public Iace_FinishedGoodServicePostTransferJournalResponse(string response) {
+            this.response = response;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface Iace_FinishedGoodServiceChannel : NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService, System.ServiceModel.IClientChannel {
     }
@@ -2884,830 +3121,77 @@ namespace NeproWebApi.AXWebServiceRef1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertHistoryHeaderData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest request) {
-            return base.Channel.InsertHistoryHeaderData(request);
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingJournalDetails(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest request) {
+            return base.Channel.CreatePickingJournalDetails(request);
         }
         
-        public string InsertHistoryHeaderData(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageID, string _siteid, string _workorderid, string _ItemId, decimal _WorkOrderQty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest();
+        public string CreatePickingJournalDetails(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _ItemId, decimal _Qty, string _Shift, System.DateTime _Date) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest();
             inValue.CallContext = CallContext;
-            inValue._StillageID = _StillageID;
-            inValue._siteid = _siteid;
-            inValue._workorderid = _workorderid;
+            inValue._journalid = _journalid;
             inValue._ItemId = _ItemId;
-            inValue._WorkOrderQty = _WorkOrderQty;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertHistoryHeaderData(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertHistoryHeaderDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest request) {
-            return base.Channel.InsertHistoryHeaderDataAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse> InsertHistoryHeaderDataAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageID, string _siteid, string _workorderid, string _ItemId, decimal _WorkOrderQty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest();
-            inValue.CallContext = CallContext;
-            inValue._StillageID = _StillageID;
-            inValue._siteid = _siteid;
-            inValue._workorderid = _workorderid;
-            inValue._ItemId = _ItemId;
-            inValue._WorkOrderQty = _WorkOrderQty;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertHistoryHeaderDataAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertTransferOrderLines(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest request) {
-            return base.Channel.InsertTransferOrderLines(request);
-        }
-        
-        public string InsertTransferOrderLines(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            inValue._StillageId = _StillageId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertTransferOrderLines(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertTransferOrderLinesAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest request) {
-            return base.Channel.InsertTransferOrderLinesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse> InsertTransferOrderLinesAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            inValue._StillageId = _StillageId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertTransferOrderLinesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateTransferJournalHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest request) {
-            return base.Channel.CreateTransferJournalHeader(request);
-        }
-        
-        public string CreateTransferJournalHeader(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RequestId, string _WebUser, string _stiker) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest();
-            inValue.CallContext = CallContext;
-            inValue._RequestId = _RequestId;
-            inValue._WebUser = _WebUser;
-            inValue._stiker = _stiker;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateTransferJournalHeader(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateTransferJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest request) {
-            return base.Channel.CreateTransferJournalHeaderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse> CreateTransferJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RequestId, string _WebUser, string _stiker) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest();
-            inValue.CallContext = CallContext;
-            inValue._RequestId = _RequestId;
-            inValue._WebUser = _WebUser;
-            inValue._stiker = _stiker;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateTransferJournalHeaderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertTransferHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest request) {
-            return base.Channel.InsertTransferHeader(request);
-        }
-        
-        public string InsertTransferHeader(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageId, string _ToLocation, string _WebUser, string _RequestedId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest();
-            inValue.CallContext = CallContext;
-            inValue._StillageId = _StillageId;
-            inValue._ToLocation = _ToLocation;
-            inValue._WebUser = _WebUser;
-            inValue._RequestedId = _RequestedId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertTransferHeader(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertTransferHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest request) {
-            return base.Channel.InsertTransferHeaderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse> InsertTransferHeaderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageId, string _ToLocation, string _WebUser, string _RequestedId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest();
-            inValue.CallContext = CallContext;
-            inValue._StillageId = _StillageId;
-            inValue._ToLocation = _ToLocation;
-            inValue._WebUser = _WebUser;
-            inValue._RequestedId = _RequestedId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertTransferHeaderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertHistoryDetailData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest request) {
-            return base.Channel.InsertHistoryDetailData(request);
-        }
-        
-        public string InsertHistoryDetailData(
-                    NeproWebApi.AXWebServiceRef1.CallContext CallContext, 
-                    string _StillageID, 
-                    string _PlanningId, 
-                    string _Activity, 
-                    string _ActivityDesc, 
-                    string _StillageLocation, 
-                    string _ActualFLT, 
-                    string _AssignFLT, 
-                    string _ActualLocation, 
-                    string _AssignLocation, 
-                    string _Reason, 
-                    string _ReasonDescription, 
-                    string _ISRaf, 
-                    decimal _MergeQty, 
-                    string _MergeFrom, 
-                    decimal _ReserverdQty, 
-                    decimal _CountedQty, 
-                    decimal _StillageQty, 
-                    string _UserName, 
-                    string _StillageStatus, 
-                    decimal _RejectedQty, 
-                    string _MergeTo, 
-                    string _fromlocation, 
-                    string _tolocation, 
-                    string _warehouse, 
-                    decimal _QtyAdjusted) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest();
-            inValue.CallContext = CallContext;
-            inValue._StillageID = _StillageID;
-            inValue._PlanningId = _PlanningId;
-            inValue._Activity = _Activity;
-            inValue._ActivityDesc = _ActivityDesc;
-            inValue._StillageLocation = _StillageLocation;
-            inValue._ActualFLT = _ActualFLT;
-            inValue._AssignFLT = _AssignFLT;
-            inValue._ActualLocation = _ActualLocation;
-            inValue._AssignLocation = _AssignLocation;
-            inValue._Reason = _Reason;
-            inValue._ReasonDescription = _ReasonDescription;
-            inValue._ISRaf = _ISRaf;
-            inValue._MergeQty = _MergeQty;
-            inValue._MergeFrom = _MergeFrom;
-            inValue._ReserverdQty = _ReserverdQty;
-            inValue._CountedQty = _CountedQty;
-            inValue._StillageQty = _StillageQty;
-            inValue._UserName = _UserName;
-            inValue._StillageStatus = _StillageStatus;
-            inValue._RejectedQty = _RejectedQty;
-            inValue._MergeTo = _MergeTo;
-            inValue._fromlocation = _fromlocation;
-            inValue._tolocation = _tolocation;
-            inValue._warehouse = _warehouse;
-            inValue._QtyAdjusted = _QtyAdjusted;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertHistoryDetailData(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertHistoryDetailDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest request) {
-            return base.Channel.InsertHistoryDetailDataAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse> InsertHistoryDetailDataAsync(
-                    NeproWebApi.AXWebServiceRef1.CallContext CallContext, 
-                    string _StillageID, 
-                    string _PlanningId, 
-                    string _Activity, 
-                    string _ActivityDesc, 
-                    string _StillageLocation, 
-                    string _ActualFLT, 
-                    string _AssignFLT, 
-                    string _ActualLocation, 
-                    string _AssignLocation, 
-                    string _Reason, 
-                    string _ReasonDescription, 
-                    string _ISRaf, 
-                    decimal _MergeQty, 
-                    string _MergeFrom, 
-                    decimal _ReserverdQty, 
-                    decimal _CountedQty, 
-                    decimal _StillageQty, 
-                    string _UserName, 
-                    string _StillageStatus, 
-                    decimal _RejectedQty, 
-                    string _MergeTo, 
-                    string _fromlocation, 
-                    string _tolocation, 
-                    string _warehouse, 
-                    decimal _QtyAdjusted) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest();
-            inValue.CallContext = CallContext;
-            inValue._StillageID = _StillageID;
-            inValue._PlanningId = _PlanningId;
-            inValue._Activity = _Activity;
-            inValue._ActivityDesc = _ActivityDesc;
-            inValue._StillageLocation = _StillageLocation;
-            inValue._ActualFLT = _ActualFLT;
-            inValue._AssignFLT = _AssignFLT;
-            inValue._ActualLocation = _ActualLocation;
-            inValue._AssignLocation = _AssignLocation;
-            inValue._Reason = _Reason;
-            inValue._ReasonDescription = _ReasonDescription;
-            inValue._ISRaf = _ISRaf;
-            inValue._MergeQty = _MergeQty;
-            inValue._MergeFrom = _MergeFrom;
-            inValue._ReserverdQty = _ReserverdQty;
-            inValue._CountedQty = _CountedQty;
-            inValue._StillageQty = _StillageQty;
-            inValue._UserName = _UserName;
-            inValue._StillageStatus = _StillageStatus;
-            inValue._RejectedQty = _RejectedQty;
-            inValue._MergeTo = _MergeTo;
-            inValue._fromlocation = _fromlocation;
-            inValue._tolocation = _tolocation;
-            inValue._warehouse = _warehouse;
-            inValue._QtyAdjusted = _QtyAdjusted;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertHistoryDetailDataAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostPickingJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest request) {
-            return base.Channel.PostPickingJournal(request);
-        }
-        
-        public string PostPickingJournal(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest();
-            inValue.CallContext = CallContext;
-            inValue._JournalId = _JournalId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostPickingJournal(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostPickingJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest request) {
-            return base.Channel.PostPickingJournalAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse> PostPickingJournalAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest();
-            inValue.CallContext = CallContext;
-            inValue._JournalId = _JournalId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostPickingJournalAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostQCReject(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest request) {
-            return base.Channel.PostQCReject(request);
-        }
-        
-        public string PostQCReject(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdJournalId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest();
-            inValue.CallContext = CallContext;
-            inValue._ProdJournalId = _ProdJournalId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostQCReject(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostQCRejectAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest request) {
-            return base.Channel.PostQCRejectAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse> PostQCRejectAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdJournalId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest();
-            inValue.CallContext = CallContext;
-            inValue._ProdJournalId = _ProdJournalId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostQCRejectAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectFGLine(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest request) {
-            return base.Channel.QCRejectFGLine(request);
-        }
-        
-        public string QCRejectFGLine(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest();
-            inValue.CallContext = CallContext;
-            inValue._journalid = _journalid;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectFGLine(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectFGLineAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest request) {
-            return base.Channel.QCRejectFGLineAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse> QCRejectFGLineAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest();
-            inValue.CallContext = CallContext;
-            inValue._journalid = _journalid;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectFGLineAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest request) {
-            return base.Channel.QCRejectHeader(request);
-        }
-        
-        public string QCRejectHeader(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string _StillageID, string _RejectionType) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest();
-            inValue.CallContext = CallContext;
-            inValue._workorderid = _workorderid;
-            inValue._StillageID = _StillageID;
-            inValue._RejectionType = _RejectionType;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectHeader(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest request) {
-            return base.Channel.QCRejectHeaderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse> QCRejectHeaderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string _StillageID, string _RejectionType) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest();
-            inValue.CallContext = CallContext;
-            inValue._workorderid = _workorderid;
-            inValue._StillageID = _StillageID;
-            inValue._RejectionType = _RejectionType;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectHeaderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostRouteJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest request) {
-            return base.Channel.PostRouteJournal(request);
-        }
-        
-        public string PostRouteJournal(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest();
-            inValue.CallContext = CallContext;
-            inValue._JournalId = _JournalId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostRouteJournal(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostRouteJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest request) {
-            return base.Channel.PostRouteJournalAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse> PostRouteJournalAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest();
-            inValue.CallContext = CallContext;
-            inValue._JournalId = _JournalId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostRouteJournalAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PrintSticker(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest request) {
-            return base.Channel.PrintSticker(request);
-        }
-        
-        public string PrintSticker(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillageid) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest();
-            inValue.CallContext = CallContext;
-            inValue._Stillageid = _Stillageid;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PrintSticker(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PrintStickerAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest request) {
-            return base.Channel.PrintStickerAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse> PrintStickerAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillageid) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest();
-            inValue.CallContext = CallContext;
-            inValue._Stillageid = _Stillageid;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PrintStickerAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.ProcessRejectionRAF(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest request) {
-            return base.Channel.ProcessRejectionRAF(request);
-        }
-        
-        public string ProcessRejectionRAF(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, decimal _Qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest();
-            inValue.CallContext = CallContext;
-            inValue._prodid = _prodid;
-            inValue._Picking = _Picking;
-            inValue._Route = _Route;
-            inValue._Shift = _Shift;
-            inValue._Sticker = _Sticker;
-            inValue._createdFrom = _createdFrom;
-            inValue._EndmarkRoute = _EndmarkRoute;
-            inValue._EndMarkPickingList = _EndMarkPickingList;
             inValue._Qty = _Qty;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).ProcessRejectionRAF(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.ProcessRejectionRAFAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest request) {
-            return base.Channel.ProcessRejectionRAFAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse> ProcessRejectionRAFAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, decimal _Qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest();
-            inValue.CallContext = CallContext;
-            inValue._prodid = _prodid;
-            inValue._Picking = _Picking;
-            inValue._Route = _Route;
-            inValue._Shift = _Shift;
-            inValue._Sticker = _Sticker;
-            inValue._createdFrom = _createdFrom;
-            inValue._EndmarkRoute = _EndmarkRoute;
-            inValue._EndMarkPickingList = _EndMarkPickingList;
-            inValue._Qty = _Qty;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).ProcessRejectionRAFAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertPickingData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest request) {
-            return base.Channel.InsertPickingData(request);
-        }
-        
-        public string InsertPickingData(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _salesid, string _itemid, decimal _qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest();
-            inValue.CallContext = CallContext;
-            inValue._salesid = _salesid;
-            inValue._itemid = _itemid;
-            inValue._qty = _qty;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertPickingData(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertPickingDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest request) {
-            return base.Channel.InsertPickingDataAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse> InsertPickingDataAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _salesid, string _itemid, decimal _qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest();
-            inValue.CallContext = CallContext;
-            inValue._salesid = _salesid;
-            inValue._itemid = _itemid;
-            inValue._qty = _qty;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertPickingDataAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectLines(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest request) {
-            return base.Channel.QCRejectLines(request);
-        }
-        
-        public string QCRejectLines(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _RejectionType, decimal _Qty, string _Reason, string _Shift, System.DateTime _Date, decimal _ActualQty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest();
-            inValue.CallContext = CallContext;
-            inValue._journalid = _journalid;
-            inValue._RejectionType = _RejectionType;
-            inValue._Qty = _Qty;
-            inValue._Reason = _Reason;
             inValue._Shift = _Shift;
             inValue._Date = _Date;
-            inValue._ActualQty = _ActualQty;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectLines(inValue);
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingJournalDetails(inValue);
             return retVal.response;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectLinesAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest request) {
-            return base.Channel.QCRejectLinesAsync(request);
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingJournalDetailsAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest request) {
+            return base.Channel.CreatePickingJournalDetailsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse> QCRejectLinesAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _RejectionType, decimal _Qty, string _Reason, string _Shift, System.DateTime _Date, decimal _ActualQty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest();
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse> CreatePickingJournalDetailsAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _ItemId, decimal _Qty, string _Shift, System.DateTime _Date) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest();
             inValue.CallContext = CallContext;
             inValue._journalid = _journalid;
-            inValue._RejectionType = _RejectionType;
+            inValue._ItemId = _ItemId;
             inValue._Qty = _Qty;
-            inValue._Reason = _Reason;
             inValue._Shift = _Shift;
             inValue._Date = _Date;
-            inValue._ActualQty = _ActualQty;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectLinesAsync(inValue);
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingJournalDetailsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostTransferJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest request) {
-            return base.Channel.PostTransferJournal(request);
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePackingSlip(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest request) {
+            return base.Channel.CreatePackingSlip(request);
         }
         
-        public string PostTransferJournal(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest();
+        public string CreatePackingSlip(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Routeid, string _LoadingPlanNo, string DriverId, string DriverTypeId, string DriverMobile, string DriverAddress, string DriverName, string TruckNo, string strSalesTable) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest();
             inValue.CallContext = CallContext;
-            inValue._JournalId = _JournalId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostTransferJournal(inValue);
+            inValue._Routeid = _Routeid;
+            inValue._LoadingPlanNo = _LoadingPlanNo;
+            inValue.DriverId = DriverId;
+            inValue.DriverTypeId = DriverTypeId;
+            inValue.DriverMobile = DriverMobile;
+            inValue.DriverAddress = DriverAddress;
+            inValue.DriverName = DriverName;
+            inValue.TruckNo = TruckNo;
+            inValue.strSalesTable = strSalesTable;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePackingSlip(inValue);
             return retVal.response;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostTransferJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest request) {
-            return base.Channel.PostTransferJournalAsync(request);
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePackingSlipAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest request) {
+            return base.Channel.CreatePackingSlipAsync(request);
         }
         
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse> PostTransferJournalAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest();
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse> CreatePackingSlipAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Routeid, string _LoadingPlanNo, string DriverId, string DriverTypeId, string DriverMobile, string DriverAddress, string DriverName, string TruckNo, string strSalesTable) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest();
             inValue.CallContext = CallContext;
-            inValue._JournalId = _JournalId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostTransferJournalAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.shipTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest request) {
-            return base.Channel.shipTransferOrder(request);
-        }
-        
-        public string shipTransferOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).shipTransferOrder(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.shipTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest request) {
-            return base.Channel.shipTransferOrderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse> shipTransferOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).shipTransferOrderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RegisterTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest request) {
-            return base.Channel.RegisterTransferOrder(request);
-        }
-        
-        public string RegisterTransferOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            inValue._StillageId = _StillageId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RegisterTransferOrder(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RegisterTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest request) {
-            return base.Channel.RegisterTransferOrderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse> RegisterTransferOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            inValue._StillageId = _StillageId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RegisterTransferOrderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateStillageQty(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest request) {
-            return base.Channel.UpdateStillageQty(request);
-        }
-        
-        public string UpdateStillageQty(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _Location, decimal _Qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest();
-            inValue.CallContext = CallContext;
-            inValue._Stillage = _Stillage;
-            inValue._Location = _Location;
-            inValue._Qty = _Qty;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateStillageQty(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateStillageQtyAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest request) {
-            return base.Channel.UpdateStillageQtyAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse> UpdateStillageQtyAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _Location, decimal _Qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest();
-            inValue.CallContext = CallContext;
-            inValue._Stillage = _Stillage;
-            inValue._Location = _Location;
-            inValue._Qty = _Qty;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateStillageQtyAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateTransferStatus(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest request) {
-            return base.Channel.UpdateTransferStatus(request);
-        }
-        
-        public string UpdateTransferStatus(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _InventTransferId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest();
-            inValue.CallContext = CallContext;
-            inValue._Stillage = _Stillage;
-            inValue._InventTransferId = _InventTransferId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateTransferStatus(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateTransferStatusAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest request) {
-            return base.Channel.UpdateTransferStatusAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse> UpdateTransferStatusAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _InventTransferId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest();
-            inValue.CallContext = CallContext;
-            inValue._Stillage = _Stillage;
-            inValue._InventTransferId = _InventTransferId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateTransferStatusAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.TransferOrderPickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest request) {
-            return base.Channel.TransferOrderPickingList(request);
-        }
-        
-        public string TransferOrderPickingList(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).TransferOrderPickingList(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.TransferOrderPickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest request) {
-            return base.Channel.TransferOrderPickingListAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse> TransferOrderPickingListAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).TransferOrderPickingListAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.ReportAsFinished(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest request) {
-            return base.Channel.ReportAsFinished(request);
-        }
-        
-        public string ReportAsFinished(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, bool _endjob) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest();
-            inValue.CallContext = CallContext;
-            inValue._prodid = _prodid;
-            inValue._Picking = _Picking;
-            inValue._Route = _Route;
-            inValue._Shift = _Shift;
-            inValue._Sticker = _Sticker;
-            inValue._createdFrom = _createdFrom;
-            inValue._EndmarkRoute = _EndmarkRoute;
-            inValue._EndMarkPickingList = _EndMarkPickingList;
-            inValue._endjob = _endjob;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).ReportAsFinished(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.ReportAsFinishedAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest request) {
-            return base.Channel.ReportAsFinishedAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse> ReportAsFinishedAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, bool _endjob) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest();
-            inValue.CallContext = CallContext;
-            inValue._prodid = _prodid;
-            inValue._Picking = _Picking;
-            inValue._Route = _Route;
-            inValue._Shift = _Shift;
-            inValue._Sticker = _Sticker;
-            inValue._createdFrom = _createdFrom;
-            inValue._EndmarkRoute = _EndmarkRoute;
-            inValue._EndMarkPickingList = _EndMarkPickingList;
-            inValue._endjob = _endjob;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).ReportAsFinishedAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.StartWorkOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest request) {
-            return base.Channel.StartWorkOrder(request);
-        }
-        
-        public string StartWorkOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId, bool _Picking, bool _Route, decimal _Qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._ProdId = _ProdId;
-            inValue._Picking = _Picking;
-            inValue._Route = _Route;
-            inValue._Qty = _Qty;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).StartWorkOrder(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.StartWorkOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest request) {
-            return base.Channel.StartWorkOrderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse> StartWorkOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId, bool _Picking, bool _Route, decimal _Qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._ProdId = _ProdId;
-            inValue._Picking = _Picking;
-            inValue._Route = _Route;
-            inValue._Qty = _Qty;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).StartWorkOrderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateQty(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest request) {
-            return base.Channel.UpdateQty(request);
-        }
-        
-        public string UpdateQty(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, decimal _qty, decimal _variance) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest();
-            inValue.CallContext = CallContext;
-            inValue._prodid = _prodid;
-            inValue._Picking = _Picking;
-            inValue._Route = _Route;
-            inValue._Shift = _Shift;
-            inValue._Sticker = _Sticker;
-            inValue._createdFrom = _createdFrom;
-            inValue._qty = _qty;
-            inValue._variance = _variance;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateQty(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateQtyAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest request) {
-            return base.Channel.UpdateQtyAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse> UpdateQtyAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, decimal _qty, decimal _variance) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest();
-            inValue.CallContext = CallContext;
-            inValue._prodid = _prodid;
-            inValue._Picking = _Picking;
-            inValue._Route = _Route;
-            inValue._Shift = _Shift;
-            inValue._Sticker = _Sticker;
-            inValue._createdFrom = _createdFrom;
-            inValue._qty = _qty;
-            inValue._variance = _variance;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateQtyAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RecieveTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest request) {
-            return base.Channel.RecieveTransferOrder(request);
-        }
-        
-        public string RecieveTransferOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            inValue._StillageId = _StillageId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RecieveTransferOrder(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RecieveTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest request) {
-            return base.Channel.RecieveTransferOrderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse> RecieveTransferOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._TransferId = _TransferId;
-            inValue._StillageId = _StillageId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RecieveTransferOrderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.EndWorkOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest request) {
-            return base.Channel.EndWorkOrder(request);
-        }
-        
-        public string EndWorkOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._ProdId = _ProdId;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).EndWorkOrder(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.EndWorkOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest request) {
-            return base.Channel.EndWorkOrderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse> EndWorkOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest();
-            inValue.CallContext = CallContext;
-            inValue._ProdId = _ProdId;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).EndWorkOrderAsync(inValue);
+            inValue._Routeid = _Routeid;
+            inValue._LoadingPlanNo = _LoadingPlanNo;
+            inValue.DriverId = DriverId;
+            inValue.DriverTypeId = DriverTypeId;
+            inValue.DriverMobile = DriverMobile;
+            inValue.DriverAddress = DriverAddress;
+            inValue.DriverName = DriverName;
+            inValue.TruckNo = TruckNo;
+            inValue.strSalesTable = strSalesTable;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePackingSlipAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3748,81 +3232,6 @@ namespace NeproWebApi.AXWebServiceRef1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CompletePickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest request) {
-            return base.Channel.CompletePickingList(request);
-        }
-        
-        public string CompletePickingList(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RouteID) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest();
-            inValue.CallContext = CallContext;
-            inValue._RouteID = _RouteID;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CompletePickingList(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CompletePickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest request) {
-            return base.Channel.CompletePickingListAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse> CompletePickingListAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RouteID) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest();
-            inValue.CallContext = CallContext;
-            inValue._RouteID = _RouteID;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CompletePickingListAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingJournalDetailsFG(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest request) {
-            return base.Channel.CreatePickingJournalDetailsFG(request);
-        }
-        
-        public string CreatePickingJournalDetailsFG(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest();
-            inValue.CallContext = CallContext;
-            inValue._journalid = _journalid;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingJournalDetailsFG(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingJournalDetailsFGAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest request) {
-            return base.Channel.CreatePickingJournalDetailsFGAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse> CreatePickingJournalDetailsFGAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest();
-            inValue.CallContext = CallContext;
-            inValue._journalid = _journalid;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingJournalDetailsFGAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest request) {
-            return base.Channel.CreatePickingList(request);
-        }
-        
-        public string CreatePickingList(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string strSalesTable) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest();
-            inValue.CallContext = CallContext;
-            inValue.strSalesTable = strSalesTable;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingList(inValue);
-            return retVal.response;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest request) {
-            return base.Channel.CreatePickingListAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse> CreatePickingListAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string strSalesTable) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest();
-            inValue.CallContext = CallContext;
-            inValue.strSalesTable = strSalesTable;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingListAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalDetailsResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateRouteJournalDetails(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalDetailsRequest request) {
             return base.Channel.CreateRouteJournalDetails(request);
         }
@@ -3858,65 +3267,55 @@ namespace NeproWebApi.AXWebServiceRef1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateSticker(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest request) {
-            return base.Channel.CreateSticker(request);
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateRouteJournalHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest request) {
+            return base.Channel.CreateRouteJournalHeader(request);
         }
         
-        public string CreateSticker(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _zoneid, string _workorderId, decimal _qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest();
+        public string CreateRouteJournalHeader(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string _createdFrom) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest();
             inValue.CallContext = CallContext;
-            inValue._zoneid = _zoneid;
-            inValue._workorderId = _workorderId;
-            inValue._qty = _qty;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateSticker(inValue);
+            inValue._workorderid = _workorderid;
+            inValue._createdFrom = _createdFrom;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateRouteJournalHeader(inValue);
             return retVal.response;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateStickerAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest request) {
-            return base.Channel.CreateStickerAsync(request);
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateRouteJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest request) {
+            return base.Channel.CreateRouteJournalHeaderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse> CreateStickerAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _zoneid, string _workorderId, decimal _qty) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest();
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse> CreateRouteJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string _createdFrom) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest();
             inValue.CallContext = CallContext;
-            inValue._zoneid = _zoneid;
-            inValue._workorderId = _workorderId;
-            inValue._qty = _qty;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateStickerAsync(inValue);
+            inValue._workorderid = _workorderid;
+            inValue._createdFrom = _createdFrom;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateRouteJournalHeaderAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingJournalDetails(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest request) {
-            return base.Channel.CreatePickingJournalDetails(request);
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CompletePickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest request) {
+            return base.Channel.CompletePickingList(request);
         }
         
-        public string CreatePickingJournalDetails(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _ItemId, decimal _Qty, string _Shift, System.DateTime _Date) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest();
+        public string CompletePickingList(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RouteID) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest();
             inValue.CallContext = CallContext;
-            inValue._journalid = _journalid;
-            inValue._ItemId = _ItemId;
-            inValue._Qty = _Qty;
-            inValue._Shift = _Shift;
-            inValue._Date = _Date;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingJournalDetails(inValue);
+            inValue._RouteID = _RouteID;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CompletePickingList(inValue);
             return retVal.response;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingJournalDetailsAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest request) {
-            return base.Channel.CreatePickingJournalDetailsAsync(request);
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CompletePickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest request) {
+            return base.Channel.CompletePickingListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsResponse> CreatePickingJournalDetailsAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _ItemId, decimal _Qty, string _Shift, System.DateTime _Date) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsRequest();
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListResponse> CompletePickingListAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RouteID) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCompletePickingListRequest();
             inValue.CallContext = CallContext;
-            inValue._journalid = _journalid;
-            inValue._ItemId = _ItemId;
-            inValue._Qty = _Qty;
-            inValue._Shift = _Shift;
-            inValue._Date = _Date;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingJournalDetailsAsync(inValue);
+            inValue._RouteID = _RouteID;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CompletePickingListAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3978,51 +3377,106 @@ namespace NeproWebApi.AXWebServiceRef1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.DeletePickingData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest request) {
-            return base.Channel.DeletePickingData(request);
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingJournalDetailsFG(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest request) {
+            return base.Channel.CreatePickingJournalDetailsFG(request);
         }
         
-        public string DeletePickingData(NeproWebApi.AXWebServiceRef1.CallContext CallContext) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest();
+        public string CreatePickingJournalDetailsFG(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest();
             inValue.CallContext = CallContext;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).DeletePickingData(inValue);
+            inValue._journalid = _journalid;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingJournalDetailsFG(inValue);
             return retVal.response;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.DeletePickingDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest request) {
-            return base.Channel.DeletePickingDataAsync(request);
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingJournalDetailsFGAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest request) {
+            return base.Channel.CreatePickingJournalDetailsFGAsync(request);
         }
         
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse> DeletePickingDataAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest();
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGResponse> CreatePickingJournalDetailsFGAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingJournalDetailsFGRequest();
             inValue.CallContext = CallContext;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).DeletePickingDataAsync(inValue);
+            inValue._journalid = _journalid;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingJournalDetailsFGAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateRouteJournalHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest request) {
-            return base.Channel.CreateRouteJournalHeader(request);
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.ProcessRejectionRAF(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest request) {
+            return base.Channel.ProcessRejectionRAF(request);
         }
         
-        public string CreateRouteJournalHeader(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest();
+        public string ProcessRejectionRAF(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, decimal _Qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest();
             inValue.CallContext = CallContext;
-            inValue._workorderid = _workorderid;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateRouteJournalHeader(inValue);
+            inValue._prodid = _prodid;
+            inValue._Picking = _Picking;
+            inValue._Route = _Route;
+            inValue._Shift = _Shift;
+            inValue._Sticker = _Sticker;
+            inValue._createdFrom = _createdFrom;
+            inValue._EndmarkRoute = _EndmarkRoute;
+            inValue._EndMarkPickingList = _EndMarkPickingList;
+            inValue._Qty = _Qty;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).ProcessRejectionRAF(inValue);
             return retVal.response;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateRouteJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest request) {
-            return base.Channel.CreateRouteJournalHeaderAsync(request);
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.ProcessRejectionRAFAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest request) {
+            return base.Channel.ProcessRejectionRAFAsync(request);
         }
         
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderResponse> CreateRouteJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateRouteJournalHeaderRequest();
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFResponse> ProcessRejectionRAFAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, decimal _Qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceProcessRejectionRAFRequest();
             inValue.CallContext = CallContext;
-            inValue._workorderid = _workorderid;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateRouteJournalHeaderAsync(inValue);
+            inValue._prodid = _prodid;
+            inValue._Picking = _Picking;
+            inValue._Route = _Route;
+            inValue._Shift = _Shift;
+            inValue._Sticker = _Sticker;
+            inValue._createdFrom = _createdFrom;
+            inValue._EndmarkRoute = _EndmarkRoute;
+            inValue._EndMarkPickingList = _EndMarkPickingList;
+            inValue._Qty = _Qty;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).ProcessRejectionRAFAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectLines(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest request) {
+            return base.Channel.QCRejectLines(request);
+        }
+        
+        public string QCRejectLines(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _RejectionType, decimal _Qty, string _Reason, string _Shift, System.DateTime _Date, decimal _ActualQty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest();
+            inValue.CallContext = CallContext;
+            inValue._journalid = _journalid;
+            inValue._RejectionType = _RejectionType;
+            inValue._Qty = _Qty;
+            inValue._Reason = _Reason;
+            inValue._Shift = _Shift;
+            inValue._Date = _Date;
+            inValue._ActualQty = _ActualQty;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectLines(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectLinesAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest request) {
+            return base.Channel.QCRejectLinesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesResponse> QCRejectLinesAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _RejectionType, decimal _Qty, string _Reason, string _Shift, System.DateTime _Date, decimal _ActualQty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectLinesRequest();
+            inValue.CallContext = CallContext;
+            inValue._journalid = _journalid;
+            inValue._RejectionType = _RejectionType;
+            inValue._Qty = _Qty;
+            inValue._Reason = _Reason;
+            inValue._Shift = _Shift;
+            inValue._Date = _Date;
+            inValue._ActualQty = _ActualQty;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectLinesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4053,44 +3507,661 @@ namespace NeproWebApi.AXWebServiceRef1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePackingSlip(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest request) {
-            return base.Channel.CreatePackingSlip(request);
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertHistoryHeaderData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest request) {
+            return base.Channel.InsertHistoryHeaderData(request);
         }
         
-        public string CreatePackingSlip(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Routeid, string _LoadingPlanNo, string DriverId, string DriverTypeId, string DriverMobile, string DriverAddress, string DriverName, string TruckNo, string strSalesTable) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest();
+        public string InsertHistoryHeaderData(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageID, string _siteid, string _workorderid, string _ItemId, decimal _WorkOrderQty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest();
             inValue.CallContext = CallContext;
-            inValue._Routeid = _Routeid;
-            inValue._LoadingPlanNo = _LoadingPlanNo;
-            inValue.DriverId = DriverId;
-            inValue.DriverTypeId = DriverTypeId;
-            inValue.DriverMobile = DriverMobile;
-            inValue.DriverAddress = DriverAddress;
-            inValue.DriverName = DriverName;
-            inValue.TruckNo = TruckNo;
-            inValue.strSalesTable = strSalesTable;
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePackingSlip(inValue);
+            inValue._StillageID = _StillageID;
+            inValue._siteid = _siteid;
+            inValue._workorderid = _workorderid;
+            inValue._ItemId = _ItemId;
+            inValue._WorkOrderQty = _WorkOrderQty;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertHistoryHeaderData(inValue);
             return retVal.response;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePackingSlipAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest request) {
-            return base.Channel.CreatePackingSlipAsync(request);
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertHistoryHeaderDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest request) {
+            return base.Channel.InsertHistoryHeaderDataAsync(request);
         }
         
-        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipResponse> CreatePackingSlipAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Routeid, string _LoadingPlanNo, string DriverId, string DriverTypeId, string DriverMobile, string DriverAddress, string DriverName, string TruckNo, string strSalesTable) {
-            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePackingSlipRequest();
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataResponse> InsertHistoryHeaderDataAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageID, string _siteid, string _workorderid, string _ItemId, decimal _WorkOrderQty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryHeaderDataRequest();
             inValue.CallContext = CallContext;
-            inValue._Routeid = _Routeid;
-            inValue._LoadingPlanNo = _LoadingPlanNo;
-            inValue.DriverId = DriverId;
-            inValue.DriverTypeId = DriverTypeId;
-            inValue.DriverMobile = DriverMobile;
-            inValue.DriverAddress = DriverAddress;
-            inValue.DriverName = DriverName;
-            inValue.TruckNo = TruckNo;
-            inValue.strSalesTable = strSalesTable;
-            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePackingSlipAsync(inValue);
+            inValue._StillageID = _StillageID;
+            inValue._siteid = _siteid;
+            inValue._workorderid = _workorderid;
+            inValue._ItemId = _ItemId;
+            inValue._WorkOrderQty = _WorkOrderQty;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertHistoryHeaderDataAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertPickingData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest request) {
+            return base.Channel.InsertPickingData(request);
+        }
+        
+        public string InsertPickingData(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _salesid, string _itemid, decimal _qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest();
+            inValue.CallContext = CallContext;
+            inValue._salesid = _salesid;
+            inValue._itemid = _itemid;
+            inValue._qty = _qty;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertPickingData(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertPickingDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest request) {
+            return base.Channel.InsertPickingDataAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataResponse> InsertPickingDataAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _salesid, string _itemid, decimal _qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertPickingDataRequest();
+            inValue.CallContext = CallContext;
+            inValue._salesid = _salesid;
+            inValue._itemid = _itemid;
+            inValue._qty = _qty;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertPickingDataAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RegisterTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest request) {
+            return base.Channel.RegisterTransferOrder(request);
+        }
+        
+        public string RegisterTransferOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            inValue._StillageId = _StillageId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RegisterTransferOrder(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RegisterTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest request) {
+            return base.Channel.RegisterTransferOrderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderResponse> RegisterTransferOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRegisterTransferOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            inValue._StillageId = _StillageId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RegisterTransferOrderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PrintSticker(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest request) {
+            return base.Channel.PrintSticker(request);
+        }
+        
+        public string PrintSticker(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillageid) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest();
+            inValue.CallContext = CallContext;
+            inValue._Stillageid = _Stillageid;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PrintSticker(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PrintStickerAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest request) {
+            return base.Channel.PrintStickerAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerResponse> PrintStickerAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillageid) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePrintStickerRequest();
+            inValue.CallContext = CallContext;
+            inValue._Stillageid = _Stillageid;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PrintStickerAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertHistoryDetailData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest request) {
+            return base.Channel.InsertHistoryDetailData(request);
+        }
+        
+        public string InsertHistoryDetailData(
+                    NeproWebApi.AXWebServiceRef1.CallContext CallContext, 
+                    string _StillageID, 
+                    string _PlanningId, 
+                    string _Activity, 
+                    string _ActivityDesc, 
+                    string _StillageLocation, 
+                    string _ActualFLT, 
+                    string _AssignFLT, 
+                    string _ActualLocation, 
+                    string _AssignLocation, 
+                    string _Reason, 
+                    string _ReasonDescription, 
+                    string _ISRaf, 
+                    decimal _MergeQty, 
+                    string _MergeFrom, 
+                    decimal _ReserverdQty, 
+                    decimal _CountedQty, 
+                    decimal _StillageQty, 
+                    string _UserName, 
+                    string _StillageStatus, 
+                    decimal _RejectedQty, 
+                    string _MergeTo, 
+                    string _fromlocation, 
+                    string _tolocation, 
+                    string _warehouse) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest();
+            inValue.CallContext = CallContext;
+            inValue._StillageID = _StillageID;
+            inValue._PlanningId = _PlanningId;
+            inValue._Activity = _Activity;
+            inValue._ActivityDesc = _ActivityDesc;
+            inValue._StillageLocation = _StillageLocation;
+            inValue._ActualFLT = _ActualFLT;
+            inValue._AssignFLT = _AssignFLT;
+            inValue._ActualLocation = _ActualLocation;
+            inValue._AssignLocation = _AssignLocation;
+            inValue._Reason = _Reason;
+            inValue._ReasonDescription = _ReasonDescription;
+            inValue._ISRaf = _ISRaf;
+            inValue._MergeQty = _MergeQty;
+            inValue._MergeFrom = _MergeFrom;
+            inValue._ReserverdQty = _ReserverdQty;
+            inValue._CountedQty = _CountedQty;
+            inValue._StillageQty = _StillageQty;
+            inValue._UserName = _UserName;
+            inValue._StillageStatus = _StillageStatus;
+            inValue._RejectedQty = _RejectedQty;
+            inValue._MergeTo = _MergeTo;
+            inValue._fromlocation = _fromlocation;
+            inValue._tolocation = _tolocation;
+            inValue._warehouse = _warehouse;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertHistoryDetailData(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertHistoryDetailDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest request) {
+            return base.Channel.InsertHistoryDetailDataAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataResponse> InsertHistoryDetailDataAsync(
+                    NeproWebApi.AXWebServiceRef1.CallContext CallContext, 
+                    string _StillageID, 
+                    string _PlanningId, 
+                    string _Activity, 
+                    string _ActivityDesc, 
+                    string _StillageLocation, 
+                    string _ActualFLT, 
+                    string _AssignFLT, 
+                    string _ActualLocation, 
+                    string _AssignLocation, 
+                    string _Reason, 
+                    string _ReasonDescription, 
+                    string _ISRaf, 
+                    decimal _MergeQty, 
+                    string _MergeFrom, 
+                    decimal _ReserverdQty, 
+                    decimal _CountedQty, 
+                    decimal _StillageQty, 
+                    string _UserName, 
+                    string _StillageStatus, 
+                    decimal _RejectedQty, 
+                    string _MergeTo, 
+                    string _fromlocation, 
+                    string _tolocation, 
+                    string _warehouse) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertHistoryDetailDataRequest();
+            inValue.CallContext = CallContext;
+            inValue._StillageID = _StillageID;
+            inValue._PlanningId = _PlanningId;
+            inValue._Activity = _Activity;
+            inValue._ActivityDesc = _ActivityDesc;
+            inValue._StillageLocation = _StillageLocation;
+            inValue._ActualFLT = _ActualFLT;
+            inValue._AssignFLT = _AssignFLT;
+            inValue._ActualLocation = _ActualLocation;
+            inValue._AssignLocation = _AssignLocation;
+            inValue._Reason = _Reason;
+            inValue._ReasonDescription = _ReasonDescription;
+            inValue._ISRaf = _ISRaf;
+            inValue._MergeQty = _MergeQty;
+            inValue._MergeFrom = _MergeFrom;
+            inValue._ReserverdQty = _ReserverdQty;
+            inValue._CountedQty = _CountedQty;
+            inValue._StillageQty = _StillageQty;
+            inValue._UserName = _UserName;
+            inValue._StillageStatus = _StillageStatus;
+            inValue._RejectedQty = _RejectedQty;
+            inValue._MergeTo = _MergeTo;
+            inValue._fromlocation = _fromlocation;
+            inValue._tolocation = _tolocation;
+            inValue._warehouse = _warehouse;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertHistoryDetailDataAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateStillageQty(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest request) {
+            return base.Channel.UpdateStillageQty(request);
+        }
+        
+        public string UpdateStillageQty(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _Location, decimal _Qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest();
+            inValue.CallContext = CallContext;
+            inValue._Stillage = _Stillage;
+            inValue._Location = _Location;
+            inValue._Qty = _Qty;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateStillageQty(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateStillageQtyAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest request) {
+            return base.Channel.UpdateStillageQtyAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyResponse> UpdateStillageQtyAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _Location, decimal _Qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateStillageQtyRequest();
+            inValue.CallContext = CallContext;
+            inValue._Stillage = _Stillage;
+            inValue._Location = _Location;
+            inValue._Qty = _Qty;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateStillageQtyAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateTransferJournalHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest request) {
+            return base.Channel.CreateTransferJournalHeader(request);
+        }
+        
+        public string CreateTransferJournalHeader(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RequestId, string _WebUser, string _stiker) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest();
+            inValue.CallContext = CallContext;
+            inValue._RequestId = _RequestId;
+            inValue._WebUser = _WebUser;
+            inValue._stiker = _stiker;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateTransferJournalHeader(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateTransferJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest request) {
+            return base.Channel.CreateTransferJournalHeaderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderResponse> CreateTransferJournalHeaderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _RequestId, string _WebUser, string _stiker) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateTransferJournalHeaderRequest();
+            inValue.CallContext = CallContext;
+            inValue._RequestId = _RequestId;
+            inValue._WebUser = _WebUser;
+            inValue._stiker = _stiker;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateTransferJournalHeaderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RejectionJournalDetailsNew(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest request) {
+            return base.Channel.RejectionJournalDetailsNew(request);
+        }
+        
+        public string RejectionJournalDetailsNew(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _ItemId, decimal _Qty, string _Shift, System.DateTime _Date, string _sticker) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest();
+            inValue.CallContext = CallContext;
+            inValue._journalid = _journalid;
+            inValue._ItemId = _ItemId;
+            inValue._Qty = _Qty;
+            inValue._Shift = _Shift;
+            inValue._Date = _Date;
+            inValue._sticker = _sticker;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RejectionJournalDetailsNew(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RejectionJournalDetailsNewAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest request) {
+            return base.Channel.RejectionJournalDetailsNewAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewResponse> RejectionJournalDetailsNewAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _ItemId, decimal _Qty, string _Shift, System.DateTime _Date, string _sticker) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsNewRequest();
+            inValue.CallContext = CallContext;
+            inValue._journalid = _journalid;
+            inValue._ItemId = _ItemId;
+            inValue._Qty = _Qty;
+            inValue._Shift = _Shift;
+            inValue._Date = _Date;
+            inValue._sticker = _sticker;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RejectionJournalDetailsNewAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateSticker(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest request) {
+            return base.Channel.CreateSticker(request);
+        }
+        
+        public string CreateSticker(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _zoneid, string _workorderId, decimal _qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest();
+            inValue.CallContext = CallContext;
+            inValue._zoneid = _zoneid;
+            inValue._workorderId = _workorderId;
+            inValue._qty = _qty;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateSticker(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateStickerAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest request) {
+            return base.Channel.CreateStickerAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerResponse> CreateStickerAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _zoneid, string _workorderId, decimal _qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerRequest();
+            inValue.CallContext = CallContext;
+            inValue._zoneid = _zoneid;
+            inValue._workorderId = _workorderId;
+            inValue._qty = _qty;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateStickerAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostQCReject(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest request) {
+            return base.Channel.PostQCReject(request);
+        }
+        
+        public string PostQCReject(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdJournalId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest();
+            inValue.CallContext = CallContext;
+            inValue._ProdJournalId = _ProdJournalId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostQCReject(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostQCRejectAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest request) {
+            return base.Channel.PostQCRejectAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectResponse> PostQCRejectAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdJournalId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostQCRejectRequest();
+            inValue.CallContext = CallContext;
+            inValue._ProdJournalId = _ProdJournalId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostQCRejectAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.DeletePickingData(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest request) {
+            return base.Channel.DeletePickingData(request);
+        }
+        
+        public string DeletePickingData(NeproWebApi.AXWebServiceRef1.CallContext CallContext) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest();
+            inValue.CallContext = CallContext;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).DeletePickingData(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.DeletePickingDataAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest request) {
+            return base.Channel.DeletePickingDataAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataResponse> DeletePickingDataAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceDeletePickingDataRequest();
+            inValue.CallContext = CallContext;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).DeletePickingDataAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.ReportAsFinished(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest request) {
+            return base.Channel.ReportAsFinished(request);
+        }
+        
+        public string ReportAsFinished(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, bool _endjob) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest();
+            inValue.CallContext = CallContext;
+            inValue._prodid = _prodid;
+            inValue._Picking = _Picking;
+            inValue._Route = _Route;
+            inValue._Shift = _Shift;
+            inValue._Sticker = _Sticker;
+            inValue._createdFrom = _createdFrom;
+            inValue._EndmarkRoute = _EndmarkRoute;
+            inValue._EndMarkPickingList = _EndMarkPickingList;
+            inValue._endjob = _endjob;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).ReportAsFinished(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.ReportAsFinishedAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest request) {
+            return base.Channel.ReportAsFinishedAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedResponse> ReportAsFinishedAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, bool _EndmarkRoute, bool _EndMarkPickingList, bool _endjob) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceReportAsFinishedRequest();
+            inValue.CallContext = CallContext;
+            inValue._prodid = _prodid;
+            inValue._Picking = _Picking;
+            inValue._Route = _Route;
+            inValue._Shift = _Shift;
+            inValue._Sticker = _Sticker;
+            inValue._createdFrom = _createdFrom;
+            inValue._EndmarkRoute = _EndmarkRoute;
+            inValue._EndMarkPickingList = _EndMarkPickingList;
+            inValue._endjob = _endjob;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).ReportAsFinishedAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertTransferOrderLines(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest request) {
+            return base.Channel.InsertTransferOrderLines(request);
+        }
+        
+        public string InsertTransferOrderLines(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            inValue._StillageId = _StillageId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertTransferOrderLines(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertTransferOrderLinesAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest request) {
+            return base.Channel.InsertTransferOrderLinesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesResponse> InsertTransferOrderLinesAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferOrderLinesRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            inValue._StillageId = _StillageId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertTransferOrderLinesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.shipTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest request) {
+            return base.Channel.shipTransferOrder(request);
+        }
+        
+        public string shipTransferOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).shipTransferOrder(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.shipTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest request) {
+            return base.Channel.shipTransferOrderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderResponse> shipTransferOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceShipTransferOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).shipTransferOrderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RecieveTransferOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest request) {
+            return base.Channel.RecieveTransferOrder(request);
+        }
+        
+        public string RecieveTransferOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            inValue._StillageId = _StillageId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RecieveTransferOrder(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RecieveTransferOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest request) {
+            return base.Channel.RecieveTransferOrderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderResponse> RecieveTransferOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId, string _StillageId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRecieveTransferOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            inValue._StillageId = _StillageId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RecieveTransferOrderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateTransferStatus(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest request) {
+            return base.Channel.UpdateTransferStatus(request);
+        }
+        
+        public string UpdateTransferStatus(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _InventTransferId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest();
+            inValue.CallContext = CallContext;
+            inValue._Stillage = _Stillage;
+            inValue._InventTransferId = _InventTransferId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateTransferStatus(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateTransferStatusAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest request) {
+            return base.Channel.UpdateTransferStatusAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusResponse> UpdateTransferStatusAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _Stillage, string _InventTransferId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateTransferStatusRequest();
+            inValue.CallContext = CallContext;
+            inValue._Stillage = _Stillage;
+            inValue._InventTransferId = _InventTransferId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateTransferStatusAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RejectionHeaderNew(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewRequest request) {
+            return base.Channel.RejectionHeaderNew(request);
+        }
+        
+        public string RejectionHeaderNew(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string Createdby, string _sticker) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewRequest();
+            inValue.CallContext = CallContext;
+            inValue._workorderid = _workorderid;
+            inValue.Createdby = Createdby;
+            inValue._sticker = _sticker;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RejectionHeaderNew(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RejectionHeaderNewAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewRequest request) {
+            return base.Channel.RejectionHeaderNewAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewResponse> RejectionHeaderNewAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string Createdby, string _sticker) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionHeaderNewRequest();
+            inValue.CallContext = CallContext;
+            inValue._workorderid = _workorderid;
+            inValue.Createdby = Createdby;
+            inValue._sticker = _sticker;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RejectionHeaderNewAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostPickingJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest request) {
+            return base.Channel.PostPickingJournal(request);
+        }
+        
+        public string PostPickingJournal(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest();
+            inValue.CallContext = CallContext;
+            inValue._JournalId = _JournalId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostPickingJournal(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostPickingJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest request) {
+            return base.Channel.PostPickingJournalAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalResponse> PostPickingJournalAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostPickingJournalRequest();
+            inValue.CallContext = CallContext;
+            inValue._JournalId = _JournalId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostPickingJournalAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RejectionJournalDetailsFGNew(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest request) {
+            return base.Channel.RejectionJournalDetailsFGNew(request);
+        }
+        
+        public string RejectionJournalDetailsFGNew(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _Sticker) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest();
+            inValue.CallContext = CallContext;
+            inValue._journalid = _journalid;
+            inValue._Sticker = _Sticker;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RejectionJournalDetailsFGNew(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.RejectionJournalDetailsFGNewAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest request) {
+            return base.Channel.RejectionJournalDetailsFGNewAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewResponse> RejectionJournalDetailsFGNewAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid, string _Sticker) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceRejectionJournalDetailsFGNewRequest();
+            inValue.CallContext = CallContext;
+            inValue._journalid = _journalid;
+            inValue._Sticker = _Sticker;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).RejectionJournalDetailsFGNewAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostRouteJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest request) {
+            return base.Channel.PostRouteJournal(request);
+        }
+        
+        public string PostRouteJournal(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest();
+            inValue.CallContext = CallContext;
+            inValue._JournalId = _JournalId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostRouteJournal(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostRouteJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest request) {
+            return base.Channel.PostRouteJournalAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalResponse> PostRouteJournalAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostRouteJournalRequest();
+            inValue.CallContext = CallContext;
+            inValue._JournalId = _JournalId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostRouteJournalAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4132,6 +4203,296 @@ namespace NeproWebApi.AXWebServiceRef1 {
             inValue._ToLocation = _ToLocation;
             inValue._stiker = _stiker;
             return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateTransferJournalLinesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.TransferOrderPickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest request) {
+            return base.Channel.TransferOrderPickingList(request);
+        }
+        
+        public string TransferOrderPickingList(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).TransferOrderPickingList(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.TransferOrderPickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest request) {
+            return base.Channel.TransferOrderPickingListAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListResponse> TransferOrderPickingListAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _TransferId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceTransferOrderPickingListRequest();
+            inValue.CallContext = CallContext;
+            inValue._TransferId = _TransferId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).TransferOrderPickingListAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingList(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest request) {
+            return base.Channel.CreatePickingList(request);
+        }
+        
+        public string CreatePickingList(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string strSalesTable) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest();
+            inValue.CallContext = CallContext;
+            inValue.strSalesTable = strSalesTable;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingList(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreatePickingListAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest request) {
+            return base.Channel.CreatePickingListAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListResponse> CreatePickingListAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string strSalesTable) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreatePickingListRequest();
+            inValue.CallContext = CallContext;
+            inValue.strSalesTable = strSalesTable;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreatePickingListAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertTransferHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest request) {
+            return base.Channel.InsertTransferHeader(request);
+        }
+        
+        public string InsertTransferHeader(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageId, string _ToLocation, string _WebUser, string _RequestedId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest();
+            inValue.CallContext = CallContext;
+            inValue._StillageId = _StillageId;
+            inValue._ToLocation = _ToLocation;
+            inValue._WebUser = _WebUser;
+            inValue._RequestedId = _RequestedId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertTransferHeader(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.InsertTransferHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest request) {
+            return base.Channel.InsertTransferHeaderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderResponse> InsertTransferHeaderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _StillageId, string _ToLocation, string _WebUser, string _RequestedId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceInsertTransferHeaderRequest();
+            inValue.CallContext = CallContext;
+            inValue._StillageId = _StillageId;
+            inValue._ToLocation = _ToLocation;
+            inValue._WebUser = _WebUser;
+            inValue._RequestedId = _RequestedId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).InsertTransferHeaderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectHeader(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest request) {
+            return base.Channel.QCRejectHeader(request);
+        }
+        
+        public string QCRejectHeader(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string _StillageID, string _RejectionType, string Createdby) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest();
+            inValue.CallContext = CallContext;
+            inValue._workorderid = _workorderid;
+            inValue._StillageID = _StillageID;
+            inValue._RejectionType = _RejectionType;
+            inValue.Createdby = Createdby;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectHeader(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectHeaderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest request) {
+            return base.Channel.QCRejectHeaderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderResponse> QCRejectHeaderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _workorderid, string _StillageID, string _RejectionType, string Createdby) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectHeaderRequest();
+            inValue.CallContext = CallContext;
+            inValue._workorderid = _workorderid;
+            inValue._StillageID = _StillageID;
+            inValue._RejectionType = _RejectionType;
+            inValue.Createdby = Createdby;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectHeaderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.StartWorkOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest request) {
+            return base.Channel.StartWorkOrder(request);
+        }
+        
+        public string StartWorkOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId, bool _Picking, bool _Route, decimal _Qty, string _StartedBy) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._ProdId = _ProdId;
+            inValue._Picking = _Picking;
+            inValue._Route = _Route;
+            inValue._Qty = _Qty;
+            inValue._StartedBy = _StartedBy;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).StartWorkOrder(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.StartWorkOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest request) {
+            return base.Channel.StartWorkOrderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderResponse> StartWorkOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId, bool _Picking, bool _Route, decimal _Qty, string _StartedBy) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceStartWorkOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._ProdId = _ProdId;
+            inValue._Picking = _Picking;
+            inValue._Route = _Route;
+            inValue._Qty = _Qty;
+            inValue._StartedBy = _StartedBy;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).StartWorkOrderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateQty(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest request) {
+            return base.Channel.UpdateQty(request);
+        }
+        
+        public string UpdateQty(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, decimal _qty, decimal _variance) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest();
+            inValue.CallContext = CallContext;
+            inValue._prodid = _prodid;
+            inValue._Picking = _Picking;
+            inValue._Route = _Route;
+            inValue._Shift = _Shift;
+            inValue._Sticker = _Sticker;
+            inValue._createdFrom = _createdFrom;
+            inValue._qty = _qty;
+            inValue._variance = _variance;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateQty(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.UpdateQtyAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest request) {
+            return base.Channel.UpdateQtyAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyResponse> UpdateQtyAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _prodid, bool _Picking, bool _Route, string _Shift, string _Sticker, string _createdFrom, decimal _qty, decimal _variance) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceUpdateQtyRequest();
+            inValue.CallContext = CallContext;
+            inValue._prodid = _prodid;
+            inValue._Picking = _Picking;
+            inValue._Route = _Route;
+            inValue._Shift = _Shift;
+            inValue._Sticker = _Sticker;
+            inValue._createdFrom = _createdFrom;
+            inValue._qty = _qty;
+            inValue._variance = _variance;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).UpdateQtyAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateStickerKG(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGRequest request) {
+            return base.Channel.CreateStickerKG(request);
+        }
+        
+        public string CreateStickerKG(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _zoneid, string _workorderId, decimal _qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGRequest();
+            inValue.CallContext = CallContext;
+            inValue._zoneid = _zoneid;
+            inValue._workorderId = _workorderId;
+            inValue._qty = _qty;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateStickerKG(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.CreateStickerKGAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGRequest request) {
+            return base.Channel.CreateStickerKGAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGResponse> CreateStickerKGAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _zoneid, string _workorderId, decimal _qty) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceCreateStickerKGRequest();
+            inValue.CallContext = CallContext;
+            inValue._zoneid = _zoneid;
+            inValue._workorderId = _workorderId;
+            inValue._qty = _qty;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).CreateStickerKGAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectFGLine(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest request) {
+            return base.Channel.QCRejectFGLine(request);
+        }
+        
+        public string QCRejectFGLine(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest();
+            inValue.CallContext = CallContext;
+            inValue._journalid = _journalid;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectFGLine(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.QCRejectFGLineAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest request) {
+            return base.Channel.QCRejectFGLineAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineResponse> QCRejectFGLineAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _journalid) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceQCRejectFGLineRequest();
+            inValue.CallContext = CallContext;
+            inValue._journalid = _journalid;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).QCRejectFGLineAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.EndWorkOrder(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest request) {
+            return base.Channel.EndWorkOrder(request);
+        }
+        
+        public string EndWorkOrder(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId, string _EndedBy) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._ProdId = _ProdId;
+            inValue._EndedBy = _EndedBy;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).EndWorkOrder(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.EndWorkOrderAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest request) {
+            return base.Channel.EndWorkOrderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderResponse> EndWorkOrderAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _ProdId, string _EndedBy) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServiceEndWorkOrderRequest();
+            inValue.CallContext = CallContext;
+            inValue._ProdId = _ProdId;
+            inValue._EndedBy = _EndedBy;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).EndWorkOrderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostTransferJournal(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest request) {
+            return base.Channel.PostTransferJournal(request);
+        }
+        
+        public string PostTransferJournal(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest();
+            inValue.CallContext = CallContext;
+            inValue._JournalId = _JournalId;
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse retVal = ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostTransferJournal(inValue);
+            return retVal.response;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse> NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService.PostTransferJournalAsync(NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest request) {
+            return base.Channel.PostTransferJournalAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalResponse> PostTransferJournalAsync(NeproWebApi.AXWebServiceRef1.CallContext CallContext, string _JournalId) {
+            NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest inValue = new NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodServicePostTransferJournalRequest();
+            inValue.CallContext = CallContext;
+            inValue._JournalId = _JournalId;
+            return ((NeproWebApi.AXWebServiceRef1.Iace_FinishedGoodService)(this)).PostTransferJournalAsync(inValue);
         }
     }
 }

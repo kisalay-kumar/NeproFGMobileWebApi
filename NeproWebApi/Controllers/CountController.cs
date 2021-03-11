@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Net.Mail;
 using System.Text;
 using System.Web.Http;
+using NeproWebApi;
 using NeproWebApi.Models;
 using Newtonsoft.Json;
 
@@ -124,10 +125,14 @@ namespace FRD_InventoryWebApi.Controllers
                     Cct.Company = Convert.ToString(ds.Tables[0].Rows[0]["Company"]);
                     Cct.Language = Convert.ToString(ds.Tables[0].Rows[0]["Language"]);
 
-                    string value2 = obj.ReportAsFinished(Cct, Convert.ToString(dsGetData.Tables[1].Rows[0]["WorkOrderNo"]), AutoPicked, AutoRoute, RAFD.Shift, RAFD.StickerNo, "HHD", false,false,false);
+                    Global global = new Global();
+                    string Username = global.GetUsername(RAFD.UserId.ToString());
+
+                    string value2 = obj.ReportAsFinished(Cct, Convert.ToString(dsGetData.Tables[1].Rows[0]["WorkOrderNo"]), AutoPicked, AutoRoute, RAFD.Shift, RAFD.StickerNo, Username+"-HHD", false,false,false);
                     //string value2 = obj.UpdateQty(Cct, Convert.ToString(dsGetData.Tables[1].Rows[0]["WorkOrderNo"]), AutoPicked, AutoRoute, RAFD.Shift, RAFD.StickerNo, "HDD",150);
                     string value = obj.InsertHistoryHeaderData(Cct, RAFD.StickerNo, Convert.ToString(dsGetData.Tables[1].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["WorkOrderQty"]));
-                    obj.InsertHistoryDetailData(Cct, RAFD.StickerNo, "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", "", "", "Yes", 0, "", 0, Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["StillageQty"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), Hold, 0, "","","", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]),0);
+                    //obj.InsertHistoryDetailData(Cct, RAFD.StickerNo, "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", "", "", "Yes", 0, "", 0, Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["StillageQty"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), Hold, 0, "","","", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]),0);
+                    obj.InsertHistoryDetailData(Cct, RAFD.StickerNo, "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", "", "", "Yes", 0, "", 0, Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["StillageQty"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), Hold, 0, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]));
 
                     // DataTable dtItems = (DataTable)JsonConvert.DeserializeObject(Xmlitems, (typeof(DataTable)));
                 }

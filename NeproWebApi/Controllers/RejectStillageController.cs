@@ -125,8 +125,10 @@ namespace NeproWebApi.Controllers
                 }
 
                 int flag = 0;
+                Global global = new Global();
+                string Username = global.GetUsername(RSR.UserId.ToString());
 
-               Decimal StillageQtyPcs = 0;
+                Decimal StillageQtyPcs = 0;
                 query = "Sp_RejectStillageWebApi";
                 dbcommand = new SqlCommand(query, conn);
                 dbcommand.CommandType = CommandType.StoredProcedure;
@@ -221,7 +223,8 @@ namespace NeproWebApi.Controllers
                             //obj.UpdateStillageQty(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), StillageQty);
 
                             string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                            obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                           // obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                            obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]));
 
                         }
                         else
@@ -245,7 +248,8 @@ namespace NeproWebApi.Controllers
                                 //obj.PostQCReject(Cct, JournalID);
                             }
                             string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                            obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]), 0);
+                            //obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]),0);
+                            obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]));
 
                         }
 
@@ -307,26 +311,28 @@ namespace NeproWebApi.Controllers
                                 if (RSR.IsKg == 1)
                                 {
                                     //obj.ProcessRejectionRAF(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), false, false, Convert.ToString(RSR.Shift), RSR.StickerNo, "HHD", false, false, StillageQtyPcs);
-                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process");
+                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process",Username);
                                     obj.QCRejectLines(Cct, JournalID, "Process", StillageQtyPcs, Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(RSR.Shift), Convert.ToDateTime(DateTime.Now.ToString()), RSR.Quantity);
                                     obj.QCRejectFGLine(Cct, JournalID);
                                     obj.PostQCReject(Cct, JournalID);
 
                                     string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                                    //obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]));
 
                                 }
 
                                 else
                                 {
                                     //obj.ProcessRejectionRAF(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), false, false, Convert.ToString(RSR.Shift), RSR.StickerNo, "HHD", false, false, RSR.Quantity);
-                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process");
+                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process",Username);
                                     obj.QCRejectLines(Cct, JournalID, "Process", Convert.ToDecimal(RSR.Quantity), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(RSR.Shift), Convert.ToDateTime(DateTime.Now.ToString()), RSR.Quantity);
                                     obj.QCRejectFGLine(Cct, JournalID);
                                     obj.PostQCReject(Cct, JournalID);
 
                                     string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                                   // obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]));
 
 
                                 }
@@ -340,13 +346,14 @@ namespace NeproWebApi.Controllers
                                 if (RSR.IsKg == 1)
                                 {
                                     //obj.ProcessRejectionRAF(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), false, false, Convert.ToString(RSR.Shift), RSR.StickerNo, "HHD", false, false, StillageQtyPcs);
-                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process");
+                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process",Username);
                                     obj.QCRejectLines(Cct, JournalID, "Process", StillageQtyPcs, Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(RSR.Shift), Convert.ToDateTime(DateTime.Now.ToString()), RSR.Quantity);
                                     obj.QCRejectFGLine(Cct, JournalID);
                                     obj.PostQCReject(Cct, JournalID);
 
                                     string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]), 0);
+                                   // obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]), 0);
+                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]));
 
 
                                 }
@@ -354,13 +361,14 @@ namespace NeproWebApi.Controllers
                                 else
                                 {
                                     //obj.ProcessRejectionRAF(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), false, false, Convert.ToString(RSR.Shift), RSR.StickerNo, "HHD", false, false, RSR.Quantity);
-                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process");
+                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process",Username);
                                     obj.QCRejectLines(Cct, JournalID, "Process", Convert.ToDecimal(RSR.Quantity), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(RSR.Shift), Convert.ToDateTime(DateTime.Now.ToString()), RSR.Quantity);
                                     obj.QCRejectFGLine(Cct, JournalID);
                                     obj.PostQCReject(Cct, JournalID);
 
                                     string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]), 0);
+                                    //obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]), 0);
+                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]));
 
                                 }
 
@@ -385,26 +393,28 @@ namespace NeproWebApi.Controllers
                                 if (RSR.IsKg == 1)
                                 {
                                     //obj.ProcessRejectionRAF(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), false, false, Convert.ToString(RSR.Shift), RSR.StickerNo, "HHD", false, false, StillageQtyPcs);
-                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process");
+                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process",Username);
                                     obj.QCRejectLines(Cct, JournalID, "Process", StillageQtyPcs, Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(RSR.Shift), Convert.ToDateTime(DateTime.Now.ToString()), RSR.Quantity);
                                     obj.QCRejectFGLine(Cct, JournalID);
                                     obj.PostQCReject(Cct, JournalID);
 
                                     string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                                   // obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]));
 
                                 }
 
                                 else
                                 {
                                     //obj.ProcessRejectionRAF(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), false, false, Convert.ToString(RSR.Shift), RSR.StickerNo, "HHD", false, false, RSR.Quantity);
-                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process");
+                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process",Username);
                                     obj.QCRejectLines(Cct, JournalID, "Process", Convert.ToDecimal(RSR.Quantity), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(RSR.Shift), Convert.ToDateTime(DateTime.Now.ToString()), RSR.Quantity);
                                     obj.QCRejectFGLine(Cct, JournalID);
                                     obj.PostQCReject(Cct, JournalID);
 
                                     string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                                    //obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData1.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]));
 
 
                                 }
@@ -418,13 +428,14 @@ namespace NeproWebApi.Controllers
                                 if (RSR.IsKg == 1)
                                 {
                                     //obj.ProcessRejectionRAF(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), false, false, Convert.ToString(RSR.Shift), RSR.StickerNo, "HHD", false, false, StillageQtyPcs);
-                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process");
+                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process",Username);
                                     obj.QCRejectLines(Cct, JournalID, "Process", StillageQtyPcs, Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(RSR.Shift), Convert.ToDateTime(DateTime.Now.ToString()), RSR.Quantity);
                                     obj.QCRejectFGLine(Cct, JournalID);
                                     obj.PostQCReject(Cct, JournalID);
 
                                     string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]), 0);
+                                   // obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]), 0);
+                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, StillageQtyPcs, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]));
 
 
                                 }
@@ -432,13 +443,14 @@ namespace NeproWebApi.Controllers
                                 else
                                 {
                                    // obj.ProcessRejectionRAF(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), false, false, Convert.ToString(RSR.Shift), RSR.StickerNo, "HHD", false, false, RSR.Quantity);
-                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process");
+                                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), RSR.StickerNo, "Process",Username);
                                     obj.QCRejectLines(Cct, JournalID, "Process", Convert.ToDecimal(RSR.Quantity), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(RSR.Shift), Convert.ToDateTime(DateTime.Now.ToString()), RSR.Quantity);
                                     obj.QCRejectFGLine(Cct, JournalID);
                                     obj.PostQCReject(Cct, JournalID);
 
                                     string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]), 0);
+                                    //obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]), 0);
+                                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[2].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, StillageQty, Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), Hold, RSR.Quantity, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]));
 
                                 }
 
@@ -623,7 +635,9 @@ namespace NeproWebApi.Controllers
                     Cct.Company = Convert.ToString(ds.Tables[0].Rows[0]["Company"]);
                     Cct.Language = Convert.ToString(ds.Tables[0].Rows[0]["Language"]);
                     string value = obj.InsertHistoryHeaderData(Cct, RSR.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["LoadQuantity"]));
-                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", "", "", "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), StillageStatus, 0, "","","", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]),0);
+                   // obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", "", "", "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), StillageStatus, 0, "","","", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]),0);
+                    obj.InsertHistoryDetailData(Cct, RSR.StickerNo, "", Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityName"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["ActivityDesc"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["StillageLocation"]), "", "", "", "", "", "", "No", 0, "", 0, 0, Convert.ToDecimal(dsGetData.Tables[1].Rows[0]["StillageQty"]), Convert.ToString(dsGetData.Tables[1].Rows[0]["UserName"]), StillageStatus, 0, "", "", "", Convert.ToString(dsGetData.Tables[1].Rows[0]["WareHouseID"]));
+
                 }
                 else
                 {
@@ -731,6 +745,8 @@ namespace NeproWebApi.Controllers
 
                 string JournalID = "";
                 string ItemID = "";
+                Global global = new Global();
+                string Username = global.GetUsername(WR.UserId.ToString());
                 if (WR.WOStatus == "End")
                 {
                     foreach (var row in WR.WorkorderRejectDetail)
@@ -743,7 +759,7 @@ namespace NeproWebApi.Controllers
                     }
                 else
                 {
-                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(WR.WorkorderNo), "", "Process");
+                    JournalID = obj.QCRejectHeader(Cct, Convert.ToString(WR.WorkorderNo), "", "Process", Username);
 
                     foreach (var row in WR.WorkorderRejectDetail)
                     {
@@ -764,9 +780,10 @@ namespace NeproWebApi.Controllers
                         dbcommand.Parameters.AddWithValue("@dtplan",json);
                         dbcommand.Parameters.AddWithValue("@WorkOrderNo", WR.WorkorderNo);
                         dbcommand.Parameters.AddWithValue("@ItemID", ItemID);
-                        dbcommand.Parameters.AddWithValue("@Type", 1);
+                        dbcommand.Parameters.AddWithValue("@Type", 1); 
                         dbcommand.Parameters.AddWithValue("@UserId", WR.UserId);
-                        SqlDataAdapter daGetData0 = new SqlDataAdapter(dbcommand);
+                        dbcommand.Parameters.AddWithValue("@JournalId", JournalID);
+                SqlDataAdapter daGetData0 = new SqlDataAdapter(dbcommand);
                         DataSet dsGetData0 = new DataSet();
                         daGetData0.Fill(dsGetData0);
                         //da = new SqlDataAdapter(dbcommand);

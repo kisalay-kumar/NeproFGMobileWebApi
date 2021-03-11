@@ -141,6 +141,7 @@ namespace NeproWebApi.Controllers
                 DataSet ds = new DataSet();
                 da.Fill(ds);
 
+               
                 //  DataSet ds = CommonManger.FillDatasetWithParam("Sp_AxWebserviceIntegration");
                 AXWebServiceRef1.Iace_FinishedGoodServiceClient obj = new AXWebServiceRef1.Iace_FinishedGoodServiceClient();
                 obj.ClientCredentials.Windows.ClientCredential.Domain = Convert.ToString(ds.Tables[0].Rows[0]["Domain"]);
@@ -150,7 +151,9 @@ namespace NeproWebApi.Controllers
                 AXWebServiceRef1.CallContext Cct = new AXWebServiceRef1.CallContext();
                 Cct.Company = Convert.ToString(ds.Tables[0].Rows[0]["Company"]);
                 Cct.Language = Convert.ToString(ds.Tables[0].Rows[0]["Language"]);
-                string value = obj.StartWorkOrder(Cct, WOSE.WorkOrderNo, AutoPicked, AutoRoute, Convert.ToDecimal(WOSE.StartQty));
+                Global global = new Global();
+                string Username = global.GetUsername(WOSE.UserId.ToString());
+                string value = obj.StartWorkOrder(Cct, WOSE.WorkOrderNo, AutoPicked, AutoRoute, Convert.ToDecimal(WOSE.StartQty), Username);
 
 
                 query = "Sp_WorkOrderWebApi";
@@ -232,7 +235,9 @@ namespace NeproWebApi.Controllers
                 AXWebServiceRef1.CallContext Cct = new AXWebServiceRef1.CallContext();
                 Cct.Company = Convert.ToString(ds.Tables[0].Rows[0]["Company"]);
                 Cct.Language = Convert.ToString(ds.Tables[0].Rows[0]["Language"]);
-                string value = obj.EndWorkOrder(Cct, WOSE.WorkOrderNo);
+                Global global = new Global();
+                string Username = global.GetUsername(WOSE.UserId.ToString());
+                string value = obj.EndWorkOrder(Cct, WOSE.WorkOrderNo,Username);
 
 
 
@@ -282,76 +287,77 @@ namespace NeproWebApi.Controllers
         public WorkOrderStartEndRES WorkOrderFinancialEnd(WorkOrder_Start_EndREQ WOSE)
         {
             WorkOrderStartEndRES SM = new WorkOrderStartEndRES();
-           // string date = DateTime.Now.ToString("dd/MM/yyyy");
-            Random rand = new Random();
-            string RandomNumer = rand.Next(11111, 99999).ToString();
+           //// string date = DateTime.Now.ToString("dd/MM/yyyy");
+           // Random rand = new Random();
+           // string RandomNumer = rand.Next(11111, 99999).ToString();
             try
             {
 
-                if (WOSE.UserId == "" || WOSE.UserId == null)
-                {
-                    SM.Status = "Failure";
-                    SM.Message = "Invalid UserId";
-                    return SM;
-                }
-                if (WOSE.WorkOrderNo == "" || WOSE.WorkOrderNo == null)
-                {
-                    SM.Status = "Failure";
-                    SM.Message = "Invalid WorkOrderNo";
-                    return SM;
-                }
+                //if (WOSE.UserId == "" || WOSE.UserId == null)
+                //{
+                //    SM.Status = "Failure";
+                //    SM.Message = "Invalid UserId";
+                //    return SM;
+                //}
+                //if (WOSE.WorkOrderNo == "" || WOSE.WorkOrderNo == null)
+                //{
+                //    SM.Status = "Failure";
+                //    SM.Message = "Invalid WorkOrderNo";
+                //    return SM;
+                //}
 
-                query = "Sp_AxWebserviceIntegration";
-                dbcommand = new SqlCommand(query, conn);
-                //  dbcommand.Connection.Open();
-                dbcommand.CommandType = CommandType.StoredProcedure;
-                dbcommand.CommandTimeout = 0;
-                SqlDataAdapter da = new SqlDataAdapter(dbcommand);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
+                //query = "Sp_AxWebserviceIntegration";
+                //dbcommand = new SqlCommand(query, conn);
+                ////  dbcommand.Connection.Open();
+                //dbcommand.CommandType = CommandType.StoredProcedure;
+                //dbcommand.CommandTimeout = 0;
+                //SqlDataAdapter da = new SqlDataAdapter(dbcommand);
+                //DataSet ds = new DataSet();
+                //da.Fill(ds);
 
-                //  DataSet ds = CommonManger.FillDatasetWithParam("Sp_AxWebserviceIntegration");
-                AXWebServiceRef1.Iace_FinishedGoodServiceClient obj = new AXWebServiceRef1.Iace_FinishedGoodServiceClient();
-                obj.ClientCredentials.Windows.ClientCredential.Domain = Convert.ToString(ds.Tables[0].Rows[0]["Domain"]);
-                obj.ClientCredentials.Windows.ClientCredential.UserName = Convert.ToString(ds.Tables[0].Rows[0]["Username"]);
-                obj.ClientCredentials.Windows.ClientCredential.Password = Convert.ToString(ds.Tables[0].Rows[0]["Password"]);
+                ////  DataSet ds = CommonManger.FillDatasetWithParam("Sp_AxWebserviceIntegration");
+                //AXWebServiceRef1.Iace_FinishedGoodServiceClient obj = new AXWebServiceRef1.Iace_FinishedGoodServiceClient();
+                //obj.ClientCredentials.Windows.ClientCredential.Domain = Convert.ToString(ds.Tables[0].Rows[0]["Domain"]);
+                //obj.ClientCredentials.Windows.ClientCredential.UserName = Convert.ToString(ds.Tables[0].Rows[0]["Username"]);
+                //obj.ClientCredentials.Windows.ClientCredential.Password = Convert.ToString(ds.Tables[0].Rows[0]["Password"]);
 
-                AXWebServiceRef1.CallContext Cct = new AXWebServiceRef1.CallContext();
-                Cct.Company = Convert.ToString(ds.Tables[0].Rows[0]["Company"]);
-                Cct.Language = Convert.ToString(ds.Tables[0].Rows[0]["Language"]);
+                //AXWebServiceRef1.CallContext Cct = new AXWebServiceRef1.CallContext();
+                //Cct.Company = Convert.ToString(ds.Tables[0].Rows[0]["Company"]);
+                //Cct.Language = Convert.ToString(ds.Tables[0].Rows[0]["Language"]);
 
-                //string value = obj.EndWorkOrder(Cct, WOSE.WorkOrderNo);
+                ////string value = obj.EndWorkOrder(Cct, WOSE.WorkOrderNo);
               
-                string value = obj.ReportAsFinished(Cct, WOSE.WorkOrderNo, false, false, "A",WOSE.WorkOrderNo, "HHD", true, true, true);
+                //string value = obj.ReportAsFinished(Cct, WOSE.WorkOrderNo, true, true, "A",WOSE.WorkOrderNo, "HHD",true, true, true);
 
 
 
-                query = "Sp_WorkOrderWebApi";
-                dbcommand = new SqlCommand(query, conn);
-                dbcommand.Connection.Open();
-                dbcommand.CommandType = CommandType.StoredProcedure;
-                dbcommand.Parameters.AddWithValue("@QueryType", "WorkOrderFinancialEnd");
-                dbcommand.Parameters.AddWithValue("@WorkOrderNo", WOSE.WorkOrderNo);
-                dbcommand.Parameters.AddWithValue("@UserId", WOSE.UserId);
-                dbcommand.CommandTimeout = 0;
-                da = new SqlDataAdapter(dbcommand);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                if (dt.Rows[0]["value"].ToString() == "1")
-                {
+                //query = "Sp_WorkOrderWebApi";
+                //dbcommand = new SqlCommand(query, conn);
+                //dbcommand.Connection.Open();
+                //dbcommand.CommandType = CommandType.StoredProcedure;
+                //dbcommand.Parameters.AddWithValue("@QueryType", "WorkOrderFinancialEnd");
+                //dbcommand.Parameters.AddWithValue("@WorkOrderNo", WOSE.WorkOrderNo);
+                //dbcommand.Parameters.AddWithValue("@UserId", WOSE.UserId);
+                //dbcommand.CommandTimeout = 0;
+                //da = new SqlDataAdapter(dbcommand);
+                //DataTable dt = new DataTable();
+                //da.Fill(dt);
+                //if (dt.Rows[0]["value"].ToString() == "1")
+                //{
 
-                    SM.Status = "Success";
-                    SM.Message = "Workorder end job successfully";
+                //    SM.Status = "Success";
+                //    SM.Message = "Workorder end job successfully";
 
-                }
-                else
-                {
-                    SM.Status = "Failure";
-                    SM.Message = "Invalid WorkOrder No";
+                //}
+                //else
+                //{
+                //    SM.Status = "Failure";
+                //    SM.Message = "Invalid WorkOrder No";
 
-                }
+                //}
 
-
+                SM.Status = "Failure";
+                SM.Message = "This process is not working. Please contact to Admin";
             }
             catch (Exception Ex)
             {
