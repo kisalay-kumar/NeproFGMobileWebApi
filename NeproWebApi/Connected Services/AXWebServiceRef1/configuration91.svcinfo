@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="QQmpV6XO5o+q112vhVPHVf+5ApQ=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="5uOR5dzGJRg/+YKTOdPawl/rdwM=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="netTcpBinding" name="NetTcpBinding_Iace_FinishedGoodService">
       <properties>
@@ -121,10 +121,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="NetTcpBinding_Iace_FinishedGoodService" contract="AXWebServiceRef1.Iace_FinishedGoodService" bindingType="netTcpBinding" address="net.tcp://amy-pc:8201/DynamicsAx/Services/Iace_FinishedGoodServiceGroup" bindingConfiguration="NetTcpBinding_Iace_FinishedGoodService">
+    <endpoint name="NetTcpBinding_Iace_FinishedGoodService" contract="AXWebServiceRef1.Iace_FinishedGoodService" bindingType="netTcpBinding" address="net.tcp://10.10.10.218:8201/DynamicsAx/Services/Iace_FinishedGoodServiceGroup" bindingConfiguration="NetTcpBinding_Iace_FinishedGoodService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>net.tcp://amy-pc:8201/DynamicsAx/Services/Iace_FinishedGoodServiceGroup</serializedValue>
+          <serializedValue>net.tcp://10.10.10.218:8201/DynamicsAx/Services/Iace_FinishedGoodServiceGroup</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -151,7 +151,7 @@
           <serializedValue>System.ServiceModel.Configuration.UserPrincipalNameElement</serializedValue>
         </property>
         <property path="/identity/userPrincipalName/value" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>administrator@AMY.LOCAL</serializedValue>
+          <serializedValue>administrator@DAX.local</serializedValue>
         </property>
         <property path="/identity/servicePrincipalName" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.ServicePrincipalNameElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.ServicePrincipalNameElement</serializedValue>

@@ -274,9 +274,11 @@ namespace NeproWebApi.Controllers
                 Cct.Company = Convert.ToString(ds.Tables[0].Rows[0]["Company"]);
                 Cct.Language = Convert.ToString(ds.Tables[0].Rows[0]["Language"]);
 
-               // var JournalIdPicking = obj.CreatePickingJournalHeader(Cct, SPJR.WorkOrderNo);
+                // var JournalIdPicking = obj.CreatePickingJournalHeader(Cct, SPJR.WorkOrderNo);
+                Global global = new Global();
+                string Username = global.GetUsername(SPJR.UserId.ToString());
 
-                var JournalIdRoute = obj.CreateRouteJournalHeader(Cct, SPJR.WorkOrderNo);
+                var JournalIdRoute = obj.CreateRouteJournalHeader(Cct, SPJR.WorkOrderNo, Username);
 
                 //List<PickingListData> PickingList = new List<PickingListData>();
                 //PickingList = SPJR.PickingList;

@@ -237,57 +237,71 @@ namespace NeproWebApi.Controllers
                 //{
                     Variance = Convert.ToDecimal(st.Variance);
                 //}
-                
-                if (dsGetData.Tables[1].Rows[0]["Status"].ToString() != "7")
+
+                if (dsGetData.Tables[1].Rows[0]["Status"].ToString() == "7")
                 {
-                    if (Convert.ToBoolean(dsGetData.Tables[1].Rows[0]["IsCounted"]) != true)
-                    {
+                    SM.Status = "Failure";
+                    SM.Message = "The WO is Ended, please contact Accounts dept. for adjustment";
 
-                        obj.UpdateQty(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]),Autopick, Autoroute, "A", st.StickerNo, "HHD", Convert.ToDecimal(st.Quantity), Convert.ToDecimal(Variance));
+                }
+                else if (dsGetData.Tables[1].Rows[0]["Status"].ToString() == "5" && dsGetData.Tables[1].Rows[0]["RemainingStatus"].ToString() == "5")
+                {
+                    SM.Status = "Failure";
+                    SM.Message = "The WO is Ended, please contact Accounts dept. for adjustment";
+                }
+                else if (Convert.ToBoolean(dsGetData.Tables[1].Rows[0]["IsCounted"]) != true)
+                {
 
-                        obj.InsertHistoryHeaderData(Cct, st.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
+                    obj.UpdateQty(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Autopick, Autoroute, "A", st.StickerNo, "HHD", Convert.ToDecimal(st.Quantity), Convert.ToDecimal(Variance));
 
-                        obj.InsertHistoryDetailData(Cct, st.StickerNo, "", ActivityName, ActivityDesc, Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, Convert.ToDecimal(st.Quantity), Convert.ToDecimal(st.Quantity), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), QCHold, 0, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]),0);
+                    obj.InsertHistoryHeaderData(Cct, st.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
 
-                    }
-                    else
-                    {
+                   // obj.InsertHistoryDetailData(Cct, st.StickerNo, "", ActivityName, ActivityDesc, Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, Convert.ToDecimal(st.Quantity), Convert.ToDecimal(st.Quantity), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), QCHold, 0, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                    obj.InsertHistoryDetailData(Cct, st.StickerNo, "", ActivityName, ActivityDesc, Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, Convert.ToDecimal(st.Quantity), Convert.ToDecimal(st.Quantity), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), QCHold, 0, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]));
 
-                        obj.UpdateQty(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Autopick, Autoroute, "A", st.StickerNo, "HHD", Convert.ToDecimal(Variance), Convert.ToDecimal(Variance));
-
-                        obj.InsertHistoryHeaderData(Cct, st.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
-
-                        obj.InsertHistoryDetailData(Cct, st.StickerNo, "", ActivityName, ActivityDesc, Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, Convert.ToDecimal(Variance), Convert.ToDecimal(st.Quantity), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), QCHold, 0, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]),0);
-
-
-                    }
+                    //dbcommand.Connection.Close();
+                    query = "Sp_Variance";
+                    dbcommand = new SqlCommand(query, conn);
+                    dbcommand.Connection.Open();
+                    dbcommand.CommandType = CommandType.StoredProcedure;
+                    dbcommand.Parameters.AddWithValue("@QueryType", "UpdateQty");
+                    dbcommand.Parameters.AddWithValue("@EntQty", st.Quantity);
+                    dbcommand.Parameters.AddWithValue("@StillageId", st.StickerNo);
+                    dbcommand.CommandTimeout = 0;
+                    da = new SqlDataAdapter(dbcommand);
+                    ds = new DataSet();
+                    da.Fill(ds);
+                    SM.Status = "Success";
+                    SM.Message = "Quantity Updated and Variance Posted Successfully..!";
                 }
                 else
                 {
 
-
-                    obj.UpdateQty(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), false, false, "A", st.StickerNo, "HHD", Convert.ToDecimal(st.Quantity),Convert.ToDecimal(Variance));
+                    obj.UpdateQty(Cct, Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Autopick, Autoroute, "A", st.StickerNo, "HHD", Convert.ToDecimal(Variance), Convert.ToDecimal(Variance));
 
                     obj.InsertHistoryHeaderData(Cct, st.StickerNo, Convert.ToString(dsGetData.Tables[0].Rows[0]["SiteID"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["WorkOrderNo"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ItemId"]), Convert.ToDecimal(dsGetData.Tables[0].Rows[0]["WorkOrderQty"]));
 
-                    obj.InsertHistoryDetailData(Cct, st.StickerNo, "", ActivityName, ActivityDesc, Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, 0, Convert.ToDecimal(st.Quantity), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), "", 0, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), Convert.ToDecimal(Variance));
+                    //obj.InsertHistoryDetailData(Cct, st.StickerNo, "", ActivityName, ActivityDesc, Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, Convert.ToDecimal(Variance), Convert.ToDecimal(st.Quantity), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), QCHold, 0, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]), 0);
+                    obj.InsertHistoryDetailData(Cct, st.StickerNo, "", ActivityName, ActivityDesc, Convert.ToString(dsGetData.Tables[0].Rows[0]["StillageLocation"]), "", "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonName"]), Convert.ToString(dsGetData.Tables[0].Rows[0]["ReasonDes"]), "Yes", 0, "", 0, Convert.ToDecimal(Variance), Convert.ToDecimal(st.Quantity), Convert.ToString(dsGetData.Tables[0].Rows[0]["UserName"]), QCHold, 0, "", "", "", Convert.ToString(dsGetData.Tables[0].Rows[0]["WareHouseID"]));
 
+                    //dbcommand.Connection.Close();
+                    query = "Sp_Variance";
+                    dbcommand = new SqlCommand(query, conn);
+                    dbcommand.Connection.Open();
+                    dbcommand.CommandType = CommandType.StoredProcedure;
+                    dbcommand.Parameters.AddWithValue("@QueryType", "UpdateQty");
+                    dbcommand.Parameters.AddWithValue("@EntQty", st.Quantity);
+                    dbcommand.Parameters.AddWithValue("@StillageId", st.StickerNo);
+                    dbcommand.CommandTimeout = 0;
+                    da = new SqlDataAdapter(dbcommand);
+                    ds = new DataSet();
+                    da.Fill(ds);
+                    SM.Status = "Success";
+                    SM.Message = "Quantity Updated and Variance Posted Successfully..!";
 
                 }
-                //dbcommand.Connection.Close();
-                query = "Sp_Variance";
-                dbcommand = new SqlCommand(query, conn);
-                dbcommand.Connection.Open();
-                dbcommand.CommandType = CommandType.StoredProcedure;
-                dbcommand.Parameters.AddWithValue("@QueryType", "UpdateQty");
-                dbcommand.Parameters.AddWithValue("@EntQty", st.Quantity);
-                dbcommand.Parameters.AddWithValue("@StillageId", st.StickerNo);
-                dbcommand.CommandTimeout = 0;
-                da = new SqlDataAdapter(dbcommand);
-                 ds = new DataSet();
-                da.Fill(ds);
-                SM.Status = "Success";
-                SM.Message = "Quantity Updated and Variance Posted Successfully..!";
+              
+               
                 return SM;
             }
 
